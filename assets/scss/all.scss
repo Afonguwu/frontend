@@ -2,14 +2,16 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "./helpers/variables-dark";
-@import "./helpers/utilities";
+//@import "../node_modules/bootstrap/scss/utilities";
+//@import "./helpers/utilities";
 @import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/utilities";
 
-// Bootstrap Icon
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css%22);
+
+// Bootstrap Icon 
+//@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css%22");
 
 //  Layout & components
+/*
 @import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
@@ -41,9 +43,10 @@
 @import "../node_modules/bootstrap/scss/spinners";
 @import "../node_modules/bootstrap/scss/offcanvas";
 
-// Helpers
+ Helpers
 @import "../node_modules/bootstrap/scss/helpers";
 
-// Utilities
+ Utilities
 @import "../node_modules/bootstrap/scss/utilities/api";
+ㄆ*/
 
