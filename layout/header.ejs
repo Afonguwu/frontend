@@ -1,4 +1,93 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<header class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid d-flex">
+      
+      <!-- header-left -->
+      
+      <!-- logo -->
+      <div class="header-left d-flex">
+        <h1 class="mb-0">
+          <a class="navbar-brand d-flex" aria-current="page" href="#">
+            <i class="bi bi-apple  me-1"></i>
+            <span class="d-none d-md-block">ThinkupTogether</span>
+            <span class="d-block d-md-none">TUT</span>
+          </a>
+        </h1>
+      
+      <!-- search -->
+        <div class="d-none d-md-flex flex-grow-1 position-absolute start-50 translate-middle-x">
+          <form class="d-flex w-75 mx-auto ">
+            <button class="btn position-absolute" type="submit"><i class="bi bi-search"></i></button>
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="padding-left:3rem">
+          </form>  
+        </div>
+      </div>
+      
+      <!-- header-right -->
+      <div class="header-right">
+        <ul class="navbar-nav d-flex flex-row fs-3 align-items-center justify-content-end me-2">
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#">
+              <i class="bi bi-cloud-moon"></i>
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#">
+              <i class="bi bi-tree"></i>
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#">
+              <i class="bi bi-bell"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <button id="loginButton" class="btn btn-outline-secondary rounded-pill" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">登入 / 註冊</button>
+          </li>
+  <!--     burger-offcanvas -->
+          <li class="nav-item">
+            <button id="profileButton" class="btn btn-outline-secondary rounded-pill px-2 py-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="display:none;">
+              <i class="bi bi-person-circle fs-3"></i>
+              <i class="bi bi-list fs-3"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body position-relative">
+                <p class="fs-1">
+                  <a class="nav-link d-flex flex-column align-items-center" href="">
+                    <i class="bi bi-person-circle"></i>
+                    <span>小明</span>
+                  </a>
+                </p>
+                <ul class="navbar-nav position-absolute start-50 translate-middle-x fs-2">
+                  <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" href="#">
+                      <i class="bi bi-people-fill me-3"></i>
+                      <span class="fs-2">討論區</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bi bi-pencil-fill me-3"></i>發文
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#">
+                      <i class="bi bi-heart me-3"></i>收藏小說
+                    </a>
+                  </li>
+              </div>
+            </div>
+          </li>
+        </ul>         
+      </div>
+    
+  <!-- search-md-none -->
+      <form class="d-md-none w-100 pt-2">
+        <button class="btn position-absolute" type="submit"><i class="bi bi-search"></i></button>
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="padding-left:3rem">
+      </form>
+    </div>
+  </header>
