@@ -7,15 +7,16 @@
 
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-100: #FAFAFA !default;
+$gray-200: #F4F4F4 !default;
+$gray-300: #EAEAEA !default;
+$gray-400: #DFDFDF !default;
+$gray-500: #D5D5D5 !default;
+$gray-600: #CACACA !default;
+$gray-700: #A2A2A2 !default;
+$gray-800: #797979 !default;
+$gray-900: #515151 !default;
+$gray-1000:#282828 !default;
 $black:    #000 !default;
 // scss-docs-end gray-color-variables
 
@@ -30,22 +31,24 @@ $grays: (
   "600": $gray-600,
   "700": $gray-700,
   "800": $gray-800,
-  "900": $gray-900
+  "900": $gray-900,
+  "1000": $gray-1000,
 ) !default;
 // scss-docs-end gray-colors-map
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    #0d6efd !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #d63384 !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #198754 !default;
-$teal:    #20c997 !default;
-$cyan:    #0dcaf0 !default;
+$blue:    #8AABFF !default;
+$indigo:  #6610f2 !default; /* bs預設 */
+$purple:  #6f42c1 !default; /* bs預設 */
+$pink:    #F27F82 !default;
+$red:     #B84B55 !default;
+$orange:  #fd7e14 !default;/* bs預設 */
+$yellow:  #FFAE5B !default;
+$green:   #ABC900 !default;
+$teal:    #20c997 !default;/* bs預設 */
+$cyan:    #80D4CC !default;
+$celadon: #89A09A !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -63,7 +66,8 @@ $colors: (
   "black":      $black,
   "white":      $white,
   "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "gray-dark":  $gray-900,
+  "celadon":    $celadon
 ) !default;
 // scss-docs-end colors-map
 
@@ -75,17 +79,31 @@ $min-contrast-ratio:   4.5 !default;
 $color-contrast-dark:      $black !default;
 $color-contrast-light:     $white !default;
 
-// fusv-disable
-$blue-100: tint-color($blue, 80%) !default;
-$blue-200: tint-color($blue, 60%) !default;
-$blue-300: tint-color($blue, 40%) !default;
-$blue-400: tint-color($blue, 20%) !default;
-$blue-500: $blue !default;
-$blue-600: shade-color($blue, 20%) !default;
-$blue-700: shade-color($blue, 40%) !default;
-$blue-800: shade-color($blue, 60%) !default;
-$blue-900: shade-color($blue, 80%) !default;
+// 設計稿顏色參數
+  // tint-color(顏色參數, 90%)
+  // tint-color(顏色參數, 80%)
+  // tint-color(顏色參數, 60%)
+  // tint-color(顏色參數, 40%)
+  // tint-color(顏色參數, 20%)
+  // 顏色參數
+  // shade-color(顏色參數, 20%)
+  // shade-color(顏色參數, 40%)
+  // shade-color(顏色參數, 60%)
+  // shade-color(顏色參數, 80%)
 
+// fusv-disable
+$blue-100: tint-color($blue, 90%) !default;
+$blue-200: tint-color($blue, 80%) !default;
+$blue-300: tint-color($blue, 60%) !default;
+$blue-400: tint-color($blue, 40%) !default;
+$blue-500: tint-color($blue, 20%) !default;
+$blue-600: $blue !default;
+$blue-700: shade-color($blue, 20%) !default;
+$blue-800: shade-color($blue, 40%) !default;
+$blue-900: shade-color($blue, 60%) !default;
+$blue-1000: shade-color($blue, 80%) !default;
+
+/* bs預設 */
 $indigo-100: tint-color($indigo, 80%) !default;
 $indigo-200: tint-color($indigo, 60%) !default;
 $indigo-300: tint-color($indigo, 40%) !default;
@@ -95,7 +113,7 @@ $indigo-600: shade-color($indigo, 20%) !default;
 $indigo-700: shade-color($indigo, 40%) !default;
 $indigo-800: shade-color($indigo, 60%) !default;
 $indigo-900: shade-color($indigo, 80%) !default;
-
+/* bs預設 */
 $purple-100: tint-color($purple, 80%) !default;
 $purple-200: tint-color($purple, 60%) !default;
 $purple-300: tint-color($purple, 40%) !default;
@@ -106,26 +124,30 @@ $purple-700: shade-color($purple, 40%) !default;
 $purple-800: shade-color($purple, 60%) !default;
 $purple-900: shade-color($purple, 80%) !default;
 
-$pink-100: tint-color($pink, 80%) !default;
-$pink-200: tint-color($pink, 60%) !default;
-$pink-300: tint-color($pink, 40%) !default;
-$pink-400: tint-color($pink, 20%) !default;
-$pink-500: $pink !default;
-$pink-600: shade-color($pink, 20%) !default;
-$pink-700: shade-color($pink, 40%) !default;
-$pink-800: shade-color($pink, 60%) !default;
-$pink-900: shade-color($pink, 80%) !default;
 
-$red-100: tint-color($red, 80%) !default;
-$red-200: tint-color($red, 60%) !default;
-$red-300: tint-color($red, 40%) !default;
-$red-400: tint-color($red, 20%) !default;
-$red-500: $red !default;
-$red-600: shade-color($red, 20%) !default;
-$red-700: shade-color($red, 40%) !default;
-$red-800: shade-color($red, 60%) !default;
-$red-900: shade-color($red, 80%) !default;
+$pink-100: tint-color($pink, 90%) !default;
+$pink-200: tint-color($pink, 80%) !default;
+$pink-300: tint-color($pink, 60%) !default;
+$pink-400: tint-color($pink, 40%) !default;
+$pink-500: tint-color($pink, 20%) !default;
+$pink-600: $pink !default;
+$pink-700: shade-color($pink, 20%) !default;
+$pink-800: shade-color($pink, 40%) !default;
+$pink-900: shade-color($pink, 60%) !default;
+$pink-1000: shade-color($pink, 80%) !default;
 
+$red-100: tint-color($red, 90%) !default;
+$red-200: tint-color($red, 80%) !default;
+$red-300: tint-color($red, 60%) !default;
+$red-400: tint-color($red, 40%) !default;
+$red-500: tint-color($red, 20%) !default;
+$red-600: $red !default;
+$red-700: shade-color($red, 20%) !default;
+$red-800: shade-color($red, 40%) !default;
+$red-900: shade-color($red, 60%) !default;
+$red-1000: shade-color($red, 80%) !default;
+
+/* bs預設 */
 $orange-100: tint-color($orange, 80%) !default;
 $orange-200: tint-color($orange, 60%) !default;
 $orange-300: tint-color($orange, 40%) !default;
@@ -136,26 +158,29 @@ $orange-700: shade-color($orange, 40%) !default;
 $orange-800: shade-color($orange, 60%) !default;
 $orange-900: shade-color($orange, 80%) !default;
 
-$yellow-100: tint-color($yellow, 80%) !default;
-$yellow-200: tint-color($yellow, 60%) !default;
-$yellow-300: tint-color($yellow, 40%) !default;
-$yellow-400: tint-color($yellow, 20%) !default;
-$yellow-500: $yellow !default;
-$yellow-600: shade-color($yellow, 20%) !default;
-$yellow-700: shade-color($yellow, 40%) !default;
-$yellow-800: shade-color($yellow, 60%) !default;
-$yellow-900: shade-color($yellow, 80%) !default;
+$yellow-100: tint-color($yellow, 90%) !default;
+$yellow-200: tint-color($yellow, 80%) !default;
+$yellow-300: tint-color($yellow, 60%) !default;
+$yellow-400: tint-color($yellow, 40%) !default;
+$yellow-500: tint-color($yellow, 20%) !default;
+$yellow-600: $yellow !default;
+$yellow-700: shade-color($yellow, 20%) !default;
+$yellow-800: shade-color($yellow, 40%) !default;
+$yellow-900: shade-color($yellow, 60%) !default;
+$yellow-1000: shade-color($yellow, 80%) !default;
 
-$green-100: tint-color($green, 80%) !default;
-$green-200: tint-color($green, 60%) !default;
-$green-300: tint-color($green, 40%) !default;
-$green-400: tint-color($green, 20%) !default;
-$green-500: $green !default;
-$green-600: shade-color($green, 20%) !default;
-$green-700: shade-color($green, 40%) !default;
-$green-800: shade-color($green, 60%) !default;
-$green-900: shade-color($green, 80%) !default;
+$green-100: tint-color($green, 90%) !default;
+$green-200: tint-color($green, 80%) !default;
+$green-300: tint-color($green, 60%) !default;
+$green-400: tint-color($green, 40%) !default;
+$green-500: tint-color($green, 20%) !default;;
+$green-600: $green !default;
+$green-700: shade-color($green, 20%) !default;
+$green-800: shade-color($green, 40%) !default;
+$green-900: shade-color($green, 60%) !default;
+$green-1000:shade-color($green, 80%) !default;
 
+/* bs預設 */
 $teal-100: tint-color($teal, 80%) !default;
 $teal-200: tint-color($teal, 60%) !default;
 $teal-300: tint-color($teal, 40%) !default;
@@ -166,15 +191,28 @@ $teal-700: shade-color($teal, 40%) !default;
 $teal-800: shade-color($teal, 60%) !default;
 $teal-900: shade-color($teal, 80%) !default;
 
-$cyan-100: tint-color($cyan, 80%) !default;
-$cyan-200: tint-color($cyan, 60%) !default;
-$cyan-300: tint-color($cyan, 40%) !default;
-$cyan-400: tint-color($cyan, 20%) !default;
-$cyan-500: $cyan !default;
-$cyan-600: shade-color($cyan, 20%) !default;
-$cyan-700: shade-color($cyan, 40%) !default;
-$cyan-800: shade-color($cyan, 60%) !default;
-$cyan-900: shade-color($cyan, 80%) !default;
+
+$cyan-100: tint-color($cyan, 90%) !default;
+$cyan-200: tint-color($cyan, 80%) !default;
+$cyan-300: tint-color($cyan, 60%) !default;
+$cyan-400: tint-color($cyan, 40%) !default;
+$cyan-500: tint-color($cyan, 20%) !default;
+$cyan-600: $cyan !default;
+$cyan-700: shade-color($cyan, 20%) !default;
+$cyan-800: shade-color($cyan, 40%) !default;
+$cyan-900: shade-color($cyan, 60%) !default;
+$cyan-1000: shade-color($cyan, 80%) !default;
+
+$celadon-100: tint-color($celadon, 90%) !default;
+$celadon-200: tint-color($celadon, 80%) !default;
+$celadon-300: tint-color($celadon, 60%) !default;
+$celadon-400: tint-color($celadon, 40%) !default;
+$celadon-500: tint-color($celadon, 20%) !default;
+$celadon-600: $celadon !default;
+$celadon-700: shade-color($celadon, 20%) !default;
+$celadon-800: shade-color($celadon, 40%) !default;
+$celadon-900: shade-color($celadon, 60%) !default;
+$celadon-1000:shade-color($celadon, 80%) !default;
 
 $blues: (
   "blue-100": $blue-100,
@@ -185,9 +223,11 @@ $blues: (
   "blue-600": $blue-600,
   "blue-700": $blue-700,
   "blue-800": $blue-800,
-  "blue-900": $blue-900
+  "blue-900": $blue-900,
+  "blue-1000": $blue-1000
 ) !default;
 
+/* bs預設 */
 $indigos: (
   "indigo-100": $indigo-100,
   "indigo-200": $indigo-200,
@@ -200,6 +240,7 @@ $indigos: (
   "indigo-900": $indigo-900
 ) !default;
 
+/* bs預設 */
 $purples: (
   "purple-100": $purple-100,
   "purple-200": $purple-200,
@@ -221,7 +262,8 @@ $pinks: (
   "pink-600": $pink-600,
   "pink-700": $pink-700,
   "pink-800": $pink-800,
-  "pink-900": $pink-900
+  "pink-900": $pink-900,
+  "pink-1000": $pink-1000
 ) !default;
 
 $reds: (
@@ -233,9 +275,11 @@ $reds: (
   "red-600": $red-600,
   "red-700": $red-700,
   "red-800": $red-800,
-  "red-900": $red-900
+  "red-900": $red-900,
+  "red-1000": $red-1000,
 ) !default;
 
+/* bs預設 */
 $oranges: (
   "orange-100": $orange-100,
   "orange-200": $orange-200,
@@ -257,7 +301,8 @@ $yellows: (
   "yellow-600": $yellow-600,
   "yellow-700": $yellow-700,
   "yellow-800": $yellow-800,
-  "yellow-900": $yellow-900
+  "yellow-900": $yellow-900,
+  "yellow-1000": $yellow-1000
 ) !default;
 
 $greens: (
@@ -269,9 +314,11 @@ $greens: (
   "green-600": $green-600,
   "green-700": $green-700,
   "green-800": $green-800,
-  "green-900": $green-900
+  "green-900": $green-900,
+  "green-1000": $green-1000,
 ) !default;
 
+/* bs預設 */
 $teals: (
   "teal-100": $teal-100,
   "teal-200": $teal-200,
@@ -293,17 +340,31 @@ $cyans: (
   "cyan-600": $cyan-600,
   "cyan-700": $cyan-700,
   "cyan-800": $cyan-800,
-  "cyan-900": $cyan-900
+  "cyan-900": $cyan-900,
+  "cyan-1000": $cyan-1000
+) !default;
+
+$celadons: (
+  "celadons-100": $celadon-100,
+  "celadons-200": $celadon-200,
+  "celadons-300": $celadon-300,
+  "celadons-400": $celadon-400,
+  "celadons-500": $celadon-500,
+  "celadons-600": $celadon-600,
+  "celadons-700": $celadon-700,
+  "celadons-800": $celadon-800,
+  "celadons-900": $celadon-900,
+  "celadons-1000": $celadon-1000
 ) !default;
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
+$primary:       $yellow-600 !default;
+$secondary:     $celadon-400 !default;
+$success:       $cyan-700 !default;
+$info:          $blue-600 !default;
+$warning:       $yellow-700 !default;
+$danger:        $red-600 !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
@@ -312,6 +373,8 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+  "tertiary":   $cyan-600,
+  "accent":     $pink-600,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
