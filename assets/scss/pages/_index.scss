@@ -1,0 +1,107 @@
+// carousel
+.carousel {
+    width: 100%;
+    position: relative;
+
+    .carousel-inner {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        background-color: #FFAE5B;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        border: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+
+        &.carousel-control-prev {
+            left: 0px;
+
+            @include media-breakpoint-up(md) {
+                left: -40px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                left: 0px
+            }
+        }
+
+        &.carousel-control-next {
+            right: 0px;
+
+            @include media-breakpoint-up(md) {
+                right: -40px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                right: 0px
+            }
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    .carousel-indicators {
+        bottom: -44px;
+
+        button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #FFAE5B;
+            border: 1px solid #ccc;
+            margin: 0 8px;
+            transition: all 0.3s ease;
+        }
+
+        .active {
+            height: 14px;
+            background-color: #FFAE5B;
+            border-radius: 20%;
+            border: none;
+            transform: scaleX(3);
+            /* Scale the active indicator horizontally */
+            transform-origin: center center;
+            /* Set the transform origin to the center */
+        }
+    }
+}
+
+// 留言 ...
+.card-text-truncate {
+    position: relative;
+
+    .text-truncate-3-lines {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        /* Number of lines to show */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .text-truncate-3-lines::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 2rem;
+        /* Adjust as needed */
+        height: 100%;
+        background: linear-gradient(to right, transparent, white);
+    }
+}
+
+.center-vertically {
+    display: flex;
+    align-items: center;
+}

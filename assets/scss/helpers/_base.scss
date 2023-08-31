@@ -1,0 +1,33 @@
+// reset
+a {
+    text-decoration: none;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+
+body {
+    padding-top: 120px;
+    // bs5預設斷點md以上開啟
+    @include media-breakpoint-up(md){
+        padding-top: 80px;
+    }
+    color:$dark;
+    background-color: #FFFBFA;
+}
+
+header{
+    background-color: #fff;
+}
+footer{
+    background-color: $primary;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,.h1,.h2,.h3,.h4,.h5,.h6{
+    margin: 0;
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+}

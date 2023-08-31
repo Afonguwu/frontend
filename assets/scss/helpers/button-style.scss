@@ -1,0 +1,38 @@
+.category{
+    border: 1px solid $primary;
+    padding: 2px 16px;
+    border-radius: 4px;
+    background-color: $primary;
+    color:white;
+    &:hover{
+        background-color: white;
+        color:$primary;
+    }
+}
+
+.icon-text{
+    border-radius: 2px;
+    padding: 4px 3px;
+    background-color: $cyan-100;
+    color: $tertiary;
+}
+
+.outline-category{
+    border: 1px solid $primary;
+    padding: 2px 16px;
+    border-radius: 2px;
+    background-color: white;
+    color:$primary;
+}
+
+.medium-btn{
+    border: 1px solid $primary;
+    padding:4px 8px;
+    background: $primary;
+    color: white;
+    border-radius: 16px;
+    &:hover{
+        background-color: white;
+        color:$primary;
+    }
+}
