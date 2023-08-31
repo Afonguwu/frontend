@@ -4,28 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ThinkUpTogether</title>
-    <script type="module" crossorigin src="/frontend/assets/main-63e3027d.js"></script>
-    <link rel="stylesheet" href="/frontend/assets/main-4d13f19b.css">
+    <title>討論區</title>
+    <link rel="icon" href="/frontend/assets/favicon-0f29a993.ico" type="image/x-icon">
+    <script type="module" crossorigin src="/frontend/assets/main-cd9b3be2.js"></script>
+    <link rel="stylesheet" href="/frontend/assets/main-aff8d8b4.css">
   </head>
   <body>
-    <header class="navbar fixed-top">
+    <style>
+  h1 a{
+    background-image:url(data:image/png;base64,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);
+    width:126px;
+    height:38px;
+    display:block;
+    text-indent:101%;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+</style>
+<header class="navbar fixed-top">
     <div class="container-fluid d-flex">
       
       <!-- header-left -->
       
       <!-- logo -->
-      <div class="header-left d-flex">
+      <div class=" d-flex">
         <h1 class="mb-0">
-          <a class="navbar-brand d-flex" aria-current="page" href="#">
-            <i class="bi bi-apple  me-1"></i>
-            <span class="d-none d-md-block">ThinkupTogether</span>
-            <span class="d-block d-md-none">TUT</span>
+          <a class=" d-flex" aria-current="page" href="index.html">
+            ThinkupTogether
           </a>
         </h1>
       
       <!-- search -->
-        <div class="d-none d-md-flex flex-grow-1 position-absolute start-50 translate-middle-x">
+        <div class="d-none d-md-flex flex-grow-1 position-absolute start-50 translate-middle-x text-secondary">
           <form class="d-flex w-75 mx-auto ">
             <button class="btn position-absolute" type="submit"><i class="bi bi-search"></i></button>
             <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="padding-left:3rem">
@@ -34,21 +44,21 @@
       </div>
       
       <!-- header-right -->
-      <div class="header-right">
+      <div class="header-right ">
         <ul class="navbar-nav d-flex flex-row fs-3 align-items-center justify-content-end me-2">
-          <li class="nav-item me-3">
+          <li class="nav-item me-4">
             <a class="nav-link" href="#">
-              <i class="bi bi-cloud-moon"></i>
+              <i class="bi bi-cloud-moon text-secondary"></i>
             </a>
           </li>
-          <li class="nav-item me-3">
+          <li class="nav-item me-4">
             <a class="nav-link active" href="#">
-              <i class="bi bi-tree"></i>
+              <i class="bi bi-tree-fill text-secondary"></i>
             </a>
           </li>
-          <li class="nav-item me-3">
+          <li class="nav-item me-4">
             <a class="nav-link" href="#">
-              <i class="bi bi-bell"></i>
+              <i class="bi bi-bell text-secondary"></i>
             </a>
           </li>
           <li class="nav-item">
@@ -66,27 +76,31 @@
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body position-relative">
-                <p class="fs-1">
-                  <a class="nav-link d-flex flex-column align-items-center" href="">
-                    <i class="bi bi-person-circle"></i>
-                    <span>小明</span>
+                <div class=" px-5">
+                  <a class="nav-link" href="#">
+                    <img src="/frontend/assets/user-1-31fdf79a.png" class="rounded-circle w-25 border  border-2 border-primary mb-2">
+                    <p class="text-secondary">小明</p>
+                    <small class="text-secondary fs-xs">51samwu@ecrowdmedia.com</small>
                   </a>
-                </p>
-                <ul class="navbar-nav position-absolute start-50 translate-middle-x fs-2">
-                  <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="#">
-                      <i class="bi bi-people-fill me-3"></i>
-                      <span class="fs-2">討論區</span>
+                </div>
+                <hr class="text-secondary">
+                <ul class="navbar-nav px-5 ">
+                  <li class="nav-item mb-4">
+                    <a class=" text-gray-800" href="#">
+                      <i class="bi bi-people-fill me-4"></i>
+                      討論區
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      <i class="bi bi-pencil-fill me-3"></i>發文
+                  <li class="nav-item mb-4">
+                    <a class="text-gray-800" href="#">
+                      <i class="bi bi-pencil-fill me-4"></i>
+                      發文
                     </a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="#">
-                      <i class="bi bi-heart me-3"></i>收藏小說
+                  <li class="nav-item dropdown mb-4">
+                    <a class="text-gray-800" href="#">
+                      <i class="bi bi-heart me-4"></i>
+                      收藏小說
                     </a>
                   </li>
               </div>
@@ -119,28 +133,28 @@
   </div>
 </div>
 
-    <footer class=" py-2">
+    <footer class=" py-3">
     <div class="container-fluid d-flex flex-column align-items-center">
        <!-- footer-logo -->
-      <div class="d-flex justify-content-center">
-        <a class="navbar-brand d-flex " aria-current="page" href="#">
-          <i class="bi bi-apple  me-1"></i>
-          <span class="d-none d-md-block">ThinkupTogether</span>
-          <span class="d-block d-md-none">TUT</span>
-        </a>
+      <div class="d-flex justify-content-center mb-4">
+            <img src="data:image/png;base64,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" alt="">
       </div>    
       <!-- footer-bot -->
-      <ul class="list-unstyled d-flex h-100 mb-0">
+      <ul class="list-unstyled d-flex h-100 mb-4">
         <li class="pe-3">
-          <a class="nav-link" href="#">服務條款</a>
+          <a class="nav-link link-light" href="#">服務條款</a>
         </li>
         <li class="pe-3">
-          <a class="nav-link active" href="#">隱私權政策</a>
+          <a class="nav-link  link-light" href="#">隱私權政策</a>
         </li>
         <li class="">
-          <a class="nav-link" href="#">使用說明</a>
+          <a class="nav-link link-light" href="#">使用說明</a>
         </li>
       </ul>
+      <p class="text-warning">
+        2023 © Think-Up Together
+      </p>
+      
     </div>
   </footer>
     
