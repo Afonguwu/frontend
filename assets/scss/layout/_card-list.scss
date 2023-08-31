@@ -1,10 +1,12 @@
 // icon-list樣式
 .icons-list {
     .list-inline-item {
-        width: 22%;
+        font-size: 12px;
+        width: 23%;
         margin: 0;
-        padding: 3px 4px;
-        border-radius: 2px 2px 2px 2px;
+        padding: 0 8px;
+        border-radius: 2px;
+        background-color: $cyan-100;
     }
 
     .list-inline-item:last-child {
@@ -19,6 +21,7 @@
 // 卡片外框線條樣式
 .card {
     border: 1px solid $gray-200;
+    border-radius: 16px;
     .card-text{
         color:$gray-700;
     }

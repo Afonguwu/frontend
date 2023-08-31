@@ -1,20 +1,29 @@
+<style>
+  h1 a{
+    background-image:url(../assets/images/logo/logo-onDark-dark.png);
+    width:126px;
+    height:38px;
+    display:block;
+    text-indent:101%;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+</style>
 <header class="navbar fixed-top">
     <div class="container-fluid d-flex">
       
       <!-- header-left -->
       
       <!-- logo -->
-      <div class="header-left d-flex">
+      <div class=" d-flex">
         <h1 class="mb-0">
-          <a class="navbar-brand d-flex" aria-current="page" href="#">
-            <i class="bi bi-apple  me-1"></i>
-            <span class="d-none d-md-block">ThinkupTogether</span>
-            <span class="d-block d-md-none">TUT</span>
+          <a class=" d-flex" aria-current="page" href="index.html">
+            ThinkupTogether
           </a>
         </h1>
       
       <!-- search -->
-        <div class="d-none d-md-flex flex-grow-1 position-absolute start-50 translate-middle-x">
+        <div class="d-none d-md-flex flex-grow-1 position-absolute start-50 translate-middle-x text-secondary">
           <form class="d-flex w-75 mx-auto ">
             <button class="btn position-absolute" type="submit"><i class="bi bi-search"></i></button>
             <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="padding-left:3rem">
@@ -23,21 +32,21 @@
       </div>
       
       <!-- header-right -->
-      <div class="header-right">
+      <div class="header-right ">
         <ul class="navbar-nav d-flex flex-row fs-3 align-items-center justify-content-end me-2">
-          <li class="nav-item me-3">
+          <li class="nav-item me-4">
             <a class="nav-link" href="#">
-              <i class="bi bi-cloud-moon"></i>
+              <i class="bi bi-cloud-moon text-secondary"></i>
             </a>
           </li>
-          <li class="nav-item me-3">
+          <li class="nav-item me-4">
             <a class="nav-link active" href="#">
-              <i class="bi bi-tree"></i>
+              <i class="bi bi-tree-fill text-secondary"></i>
             </a>
           </li>
-          <li class="nav-item me-3">
+          <li class="nav-item me-4">
             <a class="nav-link" href="#">
-              <i class="bi bi-bell"></i>
+              <i class="bi bi-bell text-secondary"></i>
             </a>
           </li>
           <li class="nav-item">
@@ -55,27 +64,31 @@
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body position-relative">
-                <p class="fs-1">
-                  <a class="nav-link d-flex flex-column align-items-center" href="">
-                    <i class="bi bi-person-circle"></i>
-                    <span>小明</span>
+                <div class=" px-5">
+                  <a class="nav-link" href="#">
+                    <img src="../assets/images/user-1.png" class="rounded-circle w-25 border  border-2 border-primary mb-2">
+                    <p class="text-secondary">小明</p>
+                    <small class="text-secondary fs-xs">51samwu@ecrowdmedia.com</small>
                   </a>
-                </p>
-                <ul class="navbar-nav position-absolute start-50 translate-middle-x fs-2">
-                  <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="#">
-                      <i class="bi bi-people-fill me-3"></i>
-                      <span class="fs-2">討論區</span>
+                </div>
+                <hr class="text-secondary">
+                <ul class="navbar-nav px-5 ">
+                  <li class="nav-item mb-4">
+                    <a class=" text-gray-800" href="#">
+                      <i class="bi bi-people-fill me-4"></i>
+                      討論區
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      <i class="bi bi-pencil-fill me-3"></i>發文
+                  <li class="nav-item mb-4">
+                    <a class="text-gray-800" href="#">
+                      <i class="bi bi-pencil-fill me-4"></i>
+                      發文
                     </a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="#">
-                      <i class="bi bi-heart me-3"></i>收藏小說
+                  <li class="nav-item dropdown mb-4">
+                    <a class="text-gray-800" href="#">
+                      <i class="bi bi-heart me-4"></i>
+                      收藏小說
                     </a>
                   </li>
               </div>

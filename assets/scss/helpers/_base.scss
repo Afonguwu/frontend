@@ -5,6 +5,20 @@ a {
 *, *:before, *:after {
     box-sizing: border-box;
 }
+img{
+    vertical-align: middle;
+}
+
+
+// 清空bs預設樣式
+h1,h2,h3,h4,h5,h6,p,span,.h1,.h2,.h3,.h4,.h5,.h6{
+    margin: 0;
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+
 
 
 body {
@@ -24,10 +38,3 @@ footer{
     background-color: $primary;
 }
 
-h1,h2,h3,h4,h5,h6,p,span,.h1,.h2,.h3,.h4,.h5,.h6{
-    margin: 0;
-}
-ul,ol{
-    margin: 0;
-    padding: 0;
-}
