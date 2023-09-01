@@ -622,11 +622,11 @@ $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .375rem !default;
-$border-radius-sm:            .25rem !default;
-$border-radius-lg:            .5rem !default;
-$border-radius-xl:            1rem !default;
-$border-radius-xxl:           2rem !default;
+$border-radius:               1rem !default;     /* 16px */
+$border-radius-sm:            .125rem !default;  /* 2px */
+$border-radius-lg:            .25rem !default;   /* 4px */
+$border-radius-xl:            .5rem !default;    /* 8px */
+$border-radius-xxl:           1.5rem !default;   /* 24px */
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
 // fusv-disable
@@ -634,10 +634,11 @@ $border-radius-2xl:           $border-radius-xxl !default; // Deprecated in v5.3
 // fusv-enable
 
 // scss-docs-start box-shadow-variables
-$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
-$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
-$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
-$box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
+$box-shadow:                  0 .4px 36px rgba($black, .08) !default;
+$box-shadow-primary:          0 0 15px rgba($yellow-700, .15) !default;
+$box-shadow-sm:               0 2px .12px rgba($black, .07) !default;
+$box-shadow-lg:               0 10px 36px rgba($black, .175) !default;
+$box-shadow-inset:            inset 0 1px 2px rgba($black, .12) !default;
 // scss-docs-end box-shadow-variables
 
 $component-active-color:      $white !default;
@@ -647,7 +648,7 @@ $component-active-bg:         $primary !default;
 $focus-ring-width:      .25rem !default;
 $focus-ring-opacity:    .25 !default;
 $focus-ring-color:      rgba($primary, $focus-ring-opacity) !default;
-$focus-ring-blur:       0 !default;
+$focus-ring-blur:       0 !default; 
 $focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color !default;
 // scss-docs-end focus-ring-variables
 
@@ -708,12 +709,14 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 3.25 !default;  /* 52px */
+$h2-font-size:                $font-size-base * 2 !default;     /* 32px */
+$h3-font-size:                $font-size-base * 1.375 !default; /* 22px */
+$h4-font-size:                $font-size-base * 1.25 !default;  /* 20px */
+$h5-font-size:                $font-size-base * 1.125 !default; /* 18px */
+$h6-font-size:                $font-size-base !default;         /* 16px */
+$h7-font-size:                $font-size-base *.875!default;    /* 14px */
+$h8-font-size:                $font-size-base *.75!default;     /* 12px */
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -723,7 +726,9 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size
 ) !default;
 // scss-docs-end font-sizes
 
