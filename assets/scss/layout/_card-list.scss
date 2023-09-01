@@ -1,0 +1,71 @@
+// icon-list樣式
+.icons-list {
+    .list-inline-item {
+        font-size: 12px;
+        width: 23%;
+        margin: 0;
+        padding: 0 8px;
+        border-radius: 2px;
+        background-color: $cyan-100;
+    }
+
+    .list-inline-item:last-child {
+        border-radius: 2px 2px 8px 2px;
+    }
+
+    .list-inline-item:first-child {
+        border-radius: 2px 2px 2px 8px;
+    }
+}
+
+// 卡片外框線條樣式
+.card {
+    border: 1px solid $gray-200;
+    border-radius: 16px;
+    .card-text{
+        color:$gray-700;
+    }
+}
+
+// 完結/新書tag
+.card-new,
+.card-done {
+    position: relative;
+}
+
+// 下方小三角形
+.card-new::before,
+.card-done::before {
+    position: absolute;
+    top: 1.3rem;
+    right: -0.8rem;
+    content: ""; 
+    background: $accent;
+    border-style: solid;
+    border-width: 10px 12px 0 0;
+    border-color: transparent white white white;
+}
+
+// 上方長方形
+.card-new::after,
+.card-done::after {
+    font-size: 12px;
+    position: absolute;
+    content: attr(data-label);
+    top: 2px;
+    right: -13px;
+    padding: 0.5rem;
+    width: 4rem;
+    background: $accent;
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    line-height: 0.2rem;
+    box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+}
+
+// 完結bg顏色
+.card-done::after,
+.card-done::before {
+    background-color: $info;
+}

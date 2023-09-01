@@ -1,0 +1,229 @@
+
+// 按鈕尺寸+樣式
+.fill-btn{
+    text-align: center;
+    white-space: nowrap;
+    padding:12px 24px;
+    line-height: 20px;
+    border-radius: 120px;
+    font-weight: $font-weight-bold;
+    width: 100%;
+}
+
+.medium-btn{
+    text-align: center;
+    white-space: nowrap;
+    padding:12px 24px;
+    line-height: 20px;
+    border-radius: 120px;
+    font-weight: $font-weight-bold;
+    max-width: 255px
+}
+
+.small-btn{
+    text-align: center;
+    white-space: nowrap;
+    padding:8px 24px;
+    line-height: 18px;
+    border-radius: 120px;
+    font-weight: $font-weight-normal;
+    max-width: 255px
+}
+
+// 按鈕顏色
+.primary-btn{
+    border: none;
+    background-color: $primary;
+    color: white;
+    &:hover{
+        background-color: $warning;
+    }
+    &:focus{
+        box-shadow: 0px 0px 0px 4px rgba($primary, .45);
+    }
+    &:disabled{
+        pointer-events: none;
+        background: $yellow-300;
+        color: $yellow-100;
+    }
+}
+
+.tertiary-btn{
+    border: none;
+    background-color: $tertiary;
+    color: white;
+    &:hover{
+        background-color: $cyan-700;
+    }
+    &:focus{
+        box-shadow: 0px 0px 0px 4px rgba($tertiary, .25);
+    }
+    &:disabled{
+        pointer-events: none;
+        background: $cyan-300;
+        color: $cyan-100;
+    }
+}
+
+.danger-btn{
+    border: 2px solid $danger;
+    background-color: white;
+    color: $danger;
+    &:hover{
+        background-color: $danger;
+        color: white;
+    }
+    &:focus{
+        background-color: $danger;
+        box-shadow: 0px 0px 0px 4px rgba($danger, .25);
+        color: white;
+    }
+    &:disabled{
+        pointer-events: none;
+        background: $red-100;
+        color: $red-300;
+    }
+}
+
+.secondary-btn{
+    border: 2px solid $secondary;
+    background-color: white;
+    color: $secondary;
+    &:hover{
+        border: none;
+        border: 2px solid $tertiary;
+        color: $tertiary;
+    }
+    &:focus{
+        background-color: $cyan-100;
+        box-shadow: 0px 0px 0px 4px rgba($tertiary, .25);
+        color: $tertiary;
+    }
+    &:disabled{
+        border: 2px solid $gray-300;
+        pointer-events: none;
+        background: $gray-100;
+        color: $gray-300;
+    }
+}
+
+// 箭頭按鈕
+.border-less{
+    border: none;
+    color: $secondary;
+    background-color: rgba(white,1);;
+    &:hover{
+        color: $primary;
+    }
+    &:focus{
+        color: $primary;
+        box-shadow: 0px 0px 0px 4px rgba($primary, .45);
+    }
+    &:disabled{
+        pointer-events: none;
+        color: $gray-300;  
+        background-color: $gray-100;
+    }
+}
+
+.apple-login-btn{
+    text-align: center;
+    display: block;
+    border-radius: 120px;
+    line-height: 20px;
+    padding: 12px 24px;
+    border: none;
+    background: #000;
+    color: white;
+}
+.facebook-login-btn{
+    text-align: center;
+    display: block;
+    border-radius: 120px;
+    line-height: 20px;
+    padding: 12px 24px;
+    border: none;
+    color: white;
+    background-color: #3B5998;
+}
+.goolge-login-btn{
+    text-align: center;
+    display: block;
+    border-radius: 120px;
+    line-height: 20px;
+    padding: 12px 24px;
+    border: none;
+    color: white;
+    background-color: #DB4437;
+}
+
+// 類別標籤按鈕
+.category{
+    border: none;
+    line-height: 18px;
+    padding: 5px 16px;
+    border-radius: 4px;
+    background-color: $yellow-500;
+    color:white;
+    &:hover{
+        background-color: $primary;
+    }
+}
+// card底下icon按鈕
+.icon-text{
+    border-radius: 2px;
+    padding: 4px 3px;
+    background-color: $cyan-100;
+    color: $tertiary;
+}
+// 類別標籤outline按鈕
+.outline-category{
+    border: 1px solid $primary;
+    padding: 2px 16px;
+    border-radius: 2px;
+    background-color: white;
+    color:$primary;
+}
+
+// 會員漢堡選單按鈕樣式(測試不成功，須再修改)
+.member-menu-btn{
+    border-radius:120px;
+    border: 2px solid  $secondary;
+    background: white;
+    border-radius: 120px;
+    &:hover{
+        border:none;
+        background: $tertiary;
+    }
+    &:focus{
+        border:none;
+        background: $cyan-700;
+    }
+    // 頭像樣式
+    .user{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius:120px;
+    border: 1px solid white;
+    background-image: url(../images/user-1.png);
+    background-size: cover;
+    }
+}
+
+// 側邊nav按鈕
+.side-nav-btn{
+    border:none;
+    color: $tertiary;
+    background-color: $cyan-100;
+    border-radius: $border-radius-sm;
+    &:hover{
+        background-color: $cyan-300;
+        color: $cyan-700;
+    }
+    &:focus{
+        background-color: $cyan-300;
+        color: $cyan-700;
+        box-shadow: 0px 0px 0px 4px rgba( $tertiary,.25);
+    }
+}

@@ -1,0 +1,111 @@
+<header class="navbar fixed-top">
+    <div class="container-fluid d-flex">
+      
+      <!-- header-left -->
+      
+      <!-- logo -->
+      <div class=" d-flex">
+        <h1 class="mb-0">
+          <a class=" d-flex" aria-current="page" href="index.html">
+            ThinkupTogether
+          </a>
+        </h1>
+      
+      <!-- search -->
+        <div class="d-none d-md-flex flex-grow-1 position-absolute start-50 translate-middle-x text-secondary">
+          <form class="d-flex w-75 mx-auto ">
+            <button class="btn position-absolute" type="submit"><i class="bi bi-search"></i></button>
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="padding-left:3rem">
+          </form>  
+        </div>
+      </div>
+      
+      <!-- header-right -->
+      <div class="header-right ">
+        <ul class="navbar-nav d-flex flex-row fs-3 align-items-center justify-content-end me-2">
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#">
+              <i class="bi bi-cloud-moon text-secondary"></i>
+            </a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link active" href="#">
+              <i class="bi bi-tree-fill text-secondary"></i>
+            </a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#">
+              <i class="bi bi-bell text-secondary"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <button id="loginButton" class="btn btn-outline-secondary rounded-pill" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">登入 / 註冊</button>
+          </li>
+  <!--     burger-offcanvas -->
+          <li class="nav-item">
+            <button id="profileButton" class="btn btn-outline-secondary rounded-pill px-2 py-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="display:none;">
+              <i class="bi bi-person-circle fs-3"></i>
+              <i class="bi bi-list fs-3"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body position-relative">
+                <div class=" px-5">
+                  <a class="nav-link" href="#">
+                    <img src="../assets/images/user-1.png" class="rounded-circle w-25 border  border-2 border-primary mb-2">
+                    <p class="text-secondary">小明</p>
+                    <small class="text-secondary fs-xs">51samwu@ecrowdmedia.com</small>
+                  </a>
+                </div>
+                <hr class="text-secondary">
+                <ul class="navbar-nav px-5 ">
+                  <li class="nav-item mb-4">
+                    <a class=" text-gray-800" href="#">
+                      <i class="bi bi-people-fill me-4"></i>
+                      討論區
+                    </a>
+                  </li>
+                  <li class="nav-item mb-4">
+                    <a class="text-gray-800" href="#">
+                      <i class="bi bi-pencil-fill me-4"></i>
+                      發文
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown mb-4">
+                    <a class="text-gray-800" href="#">
+                      <i class="bi bi-heart me-4"></i>
+                      收藏小說
+                    </a>
+                  </li>
+              </div>
+            </div>
+          </li>
+        </ul>         
+      </div>
+    
+  <!-- search-md-none -->
+      <form class="d-md-none w-100 pt-2">
+        <button class="btn position-absolute" type="submit"><i class="bi bi-search"></i></button>
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="padding-left:3rem">
+      </form>
+    </div>
+  </header>
+  <!-- modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title fw-bold" id="exampleModalLabel">帳號登入</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <a class="apple-login-btn mb-2" href="#" role="button"><i class="bi bi-apple me-2"></i>使用 Apple 帳號登入</a>
+        <a class="facebook-login-btn  mb-2" href="#" role="button"><i class="bi bi-facebook me-2"></i>使用 Facebook 帳號登入</a>
+        <a class="goolge-login-btn " href="#" role="button"><i class="bi bi-google me-2"></i>使用 Google 帳號登入</a>
+      </div>
+    </div>
+  </div>
+</div>
