@@ -70,11 +70,11 @@
     background-color: white;
     color: $danger;
     &:hover{
-        border: none;
         background-color: $danger;
         color: white;
     }
     &:focus{
+        background-color: $danger;
         box-shadow: 0px 0px 0px 4px rgba($danger, .25);
         color: white;
     }
@@ -111,6 +111,7 @@
 .border-less{
     border: none;
     color: $secondary;
+    background-color: rgba(white,1);;
     &:hover{
         color: $primary;
     }
@@ -184,7 +185,7 @@
     color:$primary;
 }
 
-// 會員漢堡選單按鈕樣式
+// 會員漢堡選單按鈕樣式(測試不成功，須再修改)
 .member-menu-btn{
     border-radius:120px;
     border: 2px solid  $secondary;
@@ -199,9 +200,15 @@
         background: $cyan-700;
     }
     // 頭像樣式
+    .user{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
     border-radius:120px;
     border: 1px solid white;
-    background: url(../images/user-1), lightgray 50% / cover no-repeat;
+    background-image: url(../images/user-1.png);
+    background-size: cover;
+    }
 }
 
 // 側邊nav按鈕
