@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ThinkUpTogether</title>
-    <link rel="icon" href="/frontend/assets/favicon-0f29a993.ico" type="image/x-icon">
-    <script type="module" crossorigin src="/frontend/assets/main-f952034d.js"></script>
-    <link rel="stylesheet" href="/frontend/assets/main-68fe8fbf.css">
-  </head>
-  <body class="position-relative">
-    <header class="navbar fixed-top">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThinkUpTogether</title>
+  <link rel="icon" href="/frontend/assets/favicon-0f29a993.ico" type="image/x-icon">
+  <script type="module" crossorigin src="/frontend/assets/main-f952034d.js"></script>
+  <link rel="stylesheet" href="/frontend/assets/main-68fe8fbf.css">
+</head>
+
+<body class="position-relative">
+  <header class="navbar fixed-top">
     <div class="container-fluid d-flex">
       
       <!-- header-left -->
@@ -172,12 +174,16 @@
       <button class="category me-2">18+</button>
     </div>
   </div>
-        <div class=" py-1 card-list">
-    <div class="d-flex align-items-center mb-4">
-      <button type="button" class="outline-category">科幻</button>
-      <h5 class="fw-bold px-2 m-0">熱門小說</h5>
-      <a class="btn btn-outline-primary border-0 ms-auto" href="#" role="button">更多<i class="bi bi-arrow-right"></i></a>
-    </div>
+          <!-- 熱門小說 -->
+          <div class="mb-9">
+            <div class="d-flex align-items-center mb-4">
+              <button type="button" class=" outline-category toggleClass">奇幻</button>
+              <h5 class="fw-bold px-2 m-0">熱門小說</h5>
+              <a class="btn btn-outline-primary border-0 ms-auto" href="#" role="button">更多
+                <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class=" py-1 card-list">
+    
     <div class="row g-5">
       <div class="col-md-6 col-lg-4">
         <div class="card card-new p-1" data-label="連載中">
@@ -300,47 +306,300 @@
         </div>
       </div>
     </div>
-  </div>      </div>
-      
+  </div>          </div>
+
+          <!-- 推薦小說 -->
+          <div class="mb-9">
+            <div class="d-flex align-items-center mb-4">
+              <button type="button" class=" outline-category toggleClass">奇幻</button>
+              <h5 class="fw-bold px-2 m-0">推薦小說</h5>
+              <a class="btn btn-outline-primary border-0 ms-auto" href="#" role="button">更多<i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class=" py-1 card-list">
+    
+    <div class="row g-5">
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-new p-1" data-label="連載中">
+          <div class="row gx-0 mb-1">
+            <img src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60" class="col-4 rounded-start" alt="神注視的孩子">
+            <div class="col-8">
+              <div class="card-body d-flex flex-column h-100 justify-content-between">
+                <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+              </div>
+            </div>
+          </div>
+          <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+            <li class="list-inline-item">
+              <a class=" d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-eye pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item  ">
+              <a class="  d-flex align-items-center justify-content-center  icon-text" href="">
+                <i class="bi bi-hand-thumbs-up  pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item ">
+              <a class="  d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-heart pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item  ">
+              <a class="  d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-chat pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-new p-1" data-label="連載中">
+          <div class="row gx-0 mb-1">
+            <img src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60" class="col-4 rounded-start" alt="神注視的孩子">
+            <div class="col-8">
+              <div class="card-body d-flex flex-column h-100 justify-content-between">
+                <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+              </div>
+            </div>
+          </div>
+          <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+            <li class="list-inline-item">
+              <a class=" d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-eye pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item  ">
+              <a class="  d-flex align-items-center justify-content-center  icon-text" href="">
+                <i class="bi bi-hand-thumbs-up  pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item ">
+              <a class="  d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-heart  pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item   ">
+              <a class="  d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-chat pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-done p-1" data-label="已完結">
+          <div class="row gx-0 mb-1">
+            <img src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60" class="col-4 rounded-start" alt="神注視的孩子">
+            <div class="col-8">
+              <div class="card-body d-flex flex-column h-100 justify-content-between">
+                <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+              </div>
+            </div>
+          </div>
+          <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+            <li class="list-inline-item">
+              <a class=" d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-eye  pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item  ">
+              <a class="  d-flex align-items-center justify-content-center  icon-text" href="">
+                <i class="bi bi-hand-thumbs-up  pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item ">
+              <a class="  d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-heart  pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item   ">
+              <a class="  d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-chat  pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>          </div>
+
+          <!-- 排行榜 -->
+          <div class="mb-9">
+            <div class="d-flex align-items-center mb-4">
+              <button type="button" class=" outline-category toggleClass">奇幻</button>
+              <h5 class="fw-bold px-2 m-0">排行榜</h5>
+              <a class="btn btn-outline-primary border-0 ms-auto" href="#" role="button">更多<i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class=" py-1 card-list">
+    
+    <div class="row g-5">
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-new p-1" data-label="連載中">
+          <div class="row gx-0 mb-1">
+            <img src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60" class="col-4 rounded-start" alt="神注視的孩子">
+            <div class="col-8">
+              <div class="card-body d-flex flex-column h-100 justify-content-between">
+                <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+              </div>
+            </div>
+          </div>
+          <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+            <li class="list-inline-item">
+              <a class=" d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-eye pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item  ">
+              <a class="  d-flex align-items-center justify-content-center  icon-text" href="">
+                <i class="bi bi-hand-thumbs-up  pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item ">
+              <a class="  d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-heart pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item  ">
+              <a class="  d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-chat pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-new p-1" data-label="連載中">
+          <div class="row gx-0 mb-1">
+            <img src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60" class="col-4 rounded-start" alt="神注視的孩子">
+            <div class="col-8">
+              <div class="card-body d-flex flex-column h-100 justify-content-between">
+                <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+              </div>
+            </div>
+          </div>
+          <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+            <li class="list-inline-item">
+              <a class=" d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-eye pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item  ">
+              <a class="  d-flex align-items-center justify-content-center  icon-text" href="">
+                <i class="bi bi-hand-thumbs-up  pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item ">
+              <a class="  d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-heart  pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item   ">
+              <a class="  d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-chat pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-done p-1" data-label="已完結">
+          <div class="row gx-0 mb-1">
+            <img src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60" class="col-4 rounded-start" alt="神注視的孩子">
+            <div class="col-8">
+              <div class="card-body d-flex flex-column h-100 justify-content-between">
+                <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+              </div>
+            </div>
+          </div>
+          <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+            <li class="list-inline-item">
+              <a class=" d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-eye  pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item  ">
+              <a class="  d-flex align-items-center justify-content-center  icon-text" href="">
+                <i class="bi bi-hand-thumbs-up  pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item ">
+              <a class="  d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-heart  pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+            <li class="list-inline-item   ">
+              <a class="  d-flex align-items-center justify-content-center icon-text" href="">
+                <i class="bi bi-chat  pe-1"></i>
+                <span class="">999+</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>          </div>
+      </div>
+
       <!-- comment-list  start-->
       <div class=" py-1 mb-9">
         <div class="d-flex align-items-center mb-2">
           <button type="button" class="outline-category">科幻</button>
           <h5 class="fw-bold px-2 m-0">新鮮留言</h5>
-          <a class="btn btn-outline-primary border-0 ms-auto" href="#" role="button"><i class="bi bi-arrow-repeat"></i>換一換</a>
+          <a class="btn btn-outline-primary border-0 ms-auto" href="#" role="button"><i
+              class="bi bi-arrow-repeat"></i>換一換</a>
         </div>
         <div class="row g-3">
           <div class="col-md-6 col-lg-4">
             <div class="card p-1 h-100">
-              <div class="card-body d-flex flex-column h-100 justify-content-between"> 
+              <div class="card-body d-flex flex-column h-100 justify-content-between">
                 <div class="d-flex align-items center mb-1">
-                  <img style="border-radius: 50%; height: 20px;width: 20px;" class="me-2" src="/frontend/assets/user-3-f800b732.png" alt="user-image">
+                  <img style="border-radius: 50%; height: 20px;width: 20px;" class="me-2"
+                    src="/frontend/assets/user-3-f800b732.png" alt="user-image">
                   <h6 class="card-subtitle text-secondary m-0">51Samwu</h6>
                 </div>
                 <div class="card-text-truncate mb-2">
                   <p class="card-text  text-truncate-3-lines center-vertically">融合攻略遊戲跟穿越(?)的小說，很有趣</p>
                 </div>
                 <div class="row d-flex align-items-center">
-                  <h6 class="col-7  text-truncate m-md-0 text-warning"><i class="bi bi-journal-text"></i>反派角色只有死亡結局（首部曲）</h6>
-                  <div class="col-5 ">
-                    <button type="button"  class=" small-btn primary-btn w-100">看作品</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card p-1 h-100">
-              <div class="card-body d-flex flex-column h-100 justify-content-between">
-                <div class="d-flex align-items-center mb-1">
-                  <img style="border-radius: 50%; height: 20px;width: 20px;" class="me-2" src="/frontend/assets/user-2-1a3a904f.png" alt="user-image">
-                  <h6 class="card-subtitle text-secondary m-0">墨</h6>
-                </div>
-                <div class="card-text-truncate mb-2">
-                  <p class="card-text  text-truncate-3-lines center-vertically">有些文章太索碎，有些少了推理素材，不是很喜歡</p>
-                </div>
-                <div class="row d-flex align-items-center">
-                  <h6 class="col-7 text-truncate m-md-0 text-warning"><i class="bi bi-journal-text"></i>偵探在菜市場裡迷了路（第十八屆台灣推理作家協會徵文獎作品集）</h6>
+                  <h6 class="col-7  text-truncate m-md-0 text-warning"><i class="bi bi-journal-text"></i>反派角色只有死亡結局（首部曲）
+                  </h6>
                   <div class="col-5 ">
                     <button type="button" class=" small-btn primary-btn w-100">看作品</button>
                   </div>
@@ -352,20 +611,43 @@
             <div class="card p-1 h-100">
               <div class="card-body d-flex flex-column h-100 justify-content-between">
                 <div class="d-flex align-items-center mb-1">
-                  <img style="border-radius: 50%; height: 20px;width: 20px;" class="me-2" src="/frontend/assets/user-1-31fdf79a.png" alt="user-image">
-                  <h6 class="card-subtitle text-secondary m-0">天天都是星期天</h6> 
+                  <img style="border-radius: 50%; height: 20px;width: 20px;" class="me-2"
+                    src="/frontend/assets/user-2-1a3a904f.png" alt="user-image">
+                  <h6 class="card-subtitle text-secondary m-0">墨</h6>
+                </div>
+                <div class="card-text-truncate mb-2">
+                  <p class="card-text  text-truncate-3-lines center-vertically">有些文章太索碎，有些少了推理素材，不是很喜歡</p>
+                </div>
+                <div class="row d-flex align-items-center">
+                  <h6 class="col-7 text-truncate m-md-0 text-warning"><i
+                      class="bi bi-journal-text"></i>偵探在菜市場裡迷了路（第十八屆台灣推理作家協會徵文獎作品集）</h6>
+                  <div class="col-5 ">
+                    <button type="button" class=" small-btn primary-btn w-100">看作品</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card p-1 h-100">
+              <div class="card-body d-flex flex-column h-100 justify-content-between">
+                <div class="d-flex align-items-center mb-1">
+                  <img style="border-radius: 50%; height: 20px;width: 20px;" class="me-2"
+                    src="/frontend/assets/user-1-31fdf79a.png" alt="user-image">
+                  <h6 class="card-subtitle text-secondary m-0">天天都是星期天</h6>
                 </div>
                 <div class="card-text-truncate mb-2">
                   <p class="card-text  text-truncate-3-lines center-vertically">
-                  雖有些多餘的描寫和無關的情節讓行文太過雜沓，但回想情節、對話和故事的畫面感，
-                  仍覺得那種有點熟悉的異國風情很有意思，最後的轉折也增加了趣味。大馬或香港作家的口語中文跟他們寫作時要用的書面中文結構不同，
-                  每次讀完作品再想到這點，我都會多一分敬意。作者後記也是真情流露，讓我感覺他細心觀察周圍並且珍惜日常一切。
+                    雖有些多餘的描寫和無關的情節讓行文太過雜沓，但回想情節、對話和故事的畫面感，
+                    仍覺得那種有點熟悉的異國風情很有意思，最後的轉折也增加了趣味。大馬或香港作家的口語中文跟他們寫作時要用的書面中文結構不同，
+                    每次讀完作品再想到這點，我都會多一分敬意。作者後記也是真情流露，讓我感覺他細心觀察周圍並且珍惜日常一切。
                   </p>
                 </div>
                 <div class="row d-flex align-items-center">
-                  <h6 class="col-7 text-truncate m-md-0 text-warning"><i class="bi bi-journal-text"></i>反派角色只有死亡結局（首部曲）</h6>
+                  <h6 class="col-7 text-truncate m-md-0 text-warning"><i class="bi bi-journal-text"></i>反派角色只有死亡結局（首部曲）
+                  </h6>
                   <div class="col-5 ">
-                    <button type="button" class="small-btn primary-btn w-100">看作品</button>  
+                    <button type="button" class="small-btn primary-btn w-100">看作品</button>
                   </div>
                 </div>
               </div>
@@ -374,7 +656,7 @@
         </div>
       </div>
       <!-- comment-list end-->
-      
+
     </div>
     <footer class=" py-3">
     <div class="container-fluid d-flex flex-column align-items-center">
@@ -399,6 +681,7 @@
       </p>
       
     </div>
-  </footer>    
-  </body>
+  </footer>      
+</body>
+
 </html>
