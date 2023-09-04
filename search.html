@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>搜尋</title>
-    <link rel="icon" href="/frontend/assets/favicon-0f29a993.ico" type="image/x-icon">
-    <script type="module" crossorigin src="/frontend/assets/main-d25d96e6.js"></script>
-    <link rel="stylesheet" href="/frontend/assets/main-68fe8fbf.css">
-  </head>
-  <body>
-    <header class="navbar fixed-top">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>搜尋</title>
+  <link rel="icon" href="/frontend/assets/favicon-0f29a993.ico" type="image/x-icon">
+  <script type="module" crossorigin src="/frontend/assets/main-faa27b72.js"></script>
+  <link rel="stylesheet" href="/frontend/assets/main-3a5ea83a.css">
+</head>
+
+<body>
+  <header class="navbar bg-body-tertiary fixed-top">
     <div class="container-fluid d-flex">
-      
-      <!-- header-left -->
-      
-      <!-- logo -->
-      <div class=" d-flex">
+
+      <!--     header-left -->
+
+      <!--     logo -->
+      <div class="header-left d-flex">
         <h1 class="mb-0">
-          <a class=" d-flex" aria-current="page" href="index.html">
+          <a aria-current="page" href="index.html">
             ThinkupTogether 共筆小說網
           </a>
         </h1>
-      
-      <!-- search -->
-        <div class="d-none d-md-flex flex-grow-1 position-absolute start-50 translate-middle-x text-secondary">
-          <form class="d-flex w-75 mx-auto" >
-            <button class="btn position-absolute" type="submit" id="goSearchBtn"><i class="bi bi-search"></i></button>
-            <input class="form-control " id="goSearchText" type="search" placeholder="Search" aria-label="Search" style="padding-left:3rem">
-          </form>  
-        </div>
       </div>
-      
+
       <!-- header-right -->
       <div class="header-right ">
         <ul class="navbar-nav d-flex flex-row fs-3 align-items-center justify-content-end me-2">
@@ -51,15 +45,19 @@
             </a>
           </li>
           <li class="nav-item">
-            <button id="loginButton" class="btn btn-outline-secondary rounded-pill" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">登入 / 註冊</button>
+            <button id="loginButton" class="btn btn-outline-secondary rounded-pill" type="submit" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">登入 / 註冊</button>
           </li>
-  <!--     burger-offcanvas -->
+          <!--     burger-offcanvas -->
           <li class="nav-item">
-            <button id="profileButton" class="btn btn-outline-secondary rounded-pill px-2 py-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="display:none;">
+            <button id="profileButton" class="btn btn-outline-secondary rounded-pill px-2 py-0" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation" style="display:none;">
               <i class="bi bi-person-circle fs-3"></i>
               <i class="bi bi-list fs-3"></i>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -67,7 +65,8 @@
               <div class="offcanvas-body position-relative">
                 <div class=" px-5">
                   <a class="nav-link" href="profile.html">
-                    <img src="/frontend/assets/user-1-31fdf79a.png" class="rounded-circle w-25 border  border-2 border-primary mb-2">
+                    <img src="/frontend/assets/user-1-31fdf79a.png"
+                      class="rounded-circle w-25 border  border-2 border-primary mb-2">
                     <p class="text-secondary">小明</p>
                     <small class="text-secondary fs-xs">51samwu@ecrowdmedia.com</small>
                   </a>
@@ -95,34 +94,597 @@
               </div>
             </div>
           </li>
-        </ul>         
+        </ul>
       </div>
-    
-  <!-- search-md-none -->
-      <form class="d-md-none w-100 pt-2">
-        <button class="btn position-absolute" type="submit"><i class="bi bi-search"></i></button>
-        <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="padding-left:3rem">
-      </form>
     </div>
   </header>
-  <!-- modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header border-bottom-0">
-        <h5 class="modal-title fw-bold" id="exampleModalLabel">帳號登入</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <a class="apple-login-btn mb-2" href="#" role="button"><i class="bi bi-apple me-2"></i>使用 Apple 帳號登入</a>
-        <a class="facebook-login-btn  mb-2" href="#" role="button"><i class="bi bi-facebook me-2"></i>使用 Facebook 帳號登入</a>
-        <a class="goolge-login-btn " href="#" role="button"><i class="bi bi-google me-2"></i>使用 Google 帳號登入</a>
-      </div>
+  <div class="container py-3 position-relative">
+    <!-- search-bar start-->
+    <form class=" row mb-4 px-1 search-form align-items-center">
+      <button class="btn position-absolute col-1 start-0 " style="width:45px" type="button" id="searchButton"><i
+          class="bi bi-search  "></i></button>
+      <input class="form-control ps-9 " id="searchText" type="search" placeholder="Search" aria-label="Search">
+    </form>
+    <!--   search-bar end -->
+    <!--  tag start -->
+    <div class="mb-4">
+      <div class="tag-container">
+    <div class="d-flex justify-content-between overflow-x-hidden tag-row">
+      <button class="category me-2" value="科幻">科幻</button>
+      <button class="category me-2" value="奇幻">奇幻</button>
+      <button class="category me-2" value="青春校園">青春校園</button>
+      <button class="category me-2" value="恐怖靈異">恐怖靈異</button>
+      <button class="category me-2" value="懸疑推理">懸疑推理</button>
+      <button class="category me-2" value="現代">現代</button>
+      <button class="category me-2" value="歷史">歷史</button>
+      <button class="category me-2" value="穿越">穿越</button>
+      <button class="category me-2" value="戀愛">戀愛</button>
+      <button class="category me-2" value="百合">百合</button>
+      <button class="category me-2" value="BL">BL</button>
+      <button class="category me-2" value="18+">18+</button>
     </div>
-  </div>
-</div>
+  </div>    </div>
+      <!--  tag end -->
+      <!--   checkbox  start-->
+      <div class="d-flex mb-4">
+        <div class="form-check me-4">
+          <input class="form-check-input" type="radio" name="check" id="ongoing" value="連載中">
+          <label class="form-check-label" for="check">連載中</label>
+        </div>
+        <div class="form-check me-4">
+          <input class="form-check-input" type="radio" name="check" id="completed" value="已完結">
+          <label class="form-check-label" for="check">已完結</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="check" id="forum" value="討論區">
+          <label class="form-check-label" for="check">討論區</label>
+        </div>
+      </div>
+      <!--   checkbox  end-->
+      <!--  nav start-->
+      <ul class="nav nav-tabs mb-3 search-bar-nav" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link link-secondary active " id="desc-tab" type="button" role="tab" aria-controls="desc"
+            aria-selected="true" data-bs-toggle="tab">新<i class="bi bi-arrow-right-short"></i>舊</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link link-secondary" id="asc-tab" data-bs-toggle="tab" data-bs-target="#profile"
+            type="button" role="tab" aria-controls="asc" aria-selected="false">舊<i
+              class="bi bi-arrow-right-short"></i>新</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link link-secondary" id="hot-tab" data-bs-toggle="tab" data-bs-target="#contact"
+            type="button" role="tab" aria-controls="hot" aria-selected="false">最熱門</button>
+        </li>
+      </ul>
+      <!--  nav end -->
 
-    <footer class=" py-3">
+      <!--   card-list -->
+
+      <div class="row g-3 card-box">
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-new p-1" data-label="新書">
+            <div class="row gx-0 mb-1">
+              <img
+                src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60"
+                class="col-4 rounded-start" alt="神注視的孩子">
+              <div class="col-8">
+                <div class="card-body d-flex flex-column h-100 justify-content-between">
+                  <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                  <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                  <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+                </div>
+              </div>
+            </div>
+            <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+              <li class="list-inline-item">
+                <a class="icon-text d-flex align-items-center justify-content-center " href="">
+                  <i class="bi bi-eye-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item  ">
+                <a class="icon-text  d-flex align-items-center justify-content-center  " href="">
+                  <i class="bi bi-hand-thumbs-up-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-heart-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item   ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-chat-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-new p-1" data-label="新書">
+            <div class="row gx-0 mb-1">
+              <img
+                src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60"
+                class="col-4 rounded-start" alt="神注視的孩子">
+              <div class="col-8">
+                <div class="card-body d-flex flex-column h-100 justify-content-between">
+                  <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                  <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                  <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+                </div>
+              </div>
+            </div>
+            <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+              <li class="list-inline-item">
+                <a class="icon-text d-flex align-items-center justify-content-center " href="">
+                  <i class="bi bi-eye-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item  ">
+                <a class="icon-text  d-flex align-items-center justify-content-center  " href="">
+                  <i class="bi bi-hand-thumbs-up-fill pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-heart-fill pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item   ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-chat-fill pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-done p-1" data-label="完結">
+            <div class="row gx-0 mb-1">
+              <img
+                src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60"
+                class="col-4 rounded-start" alt="神注視的孩子">
+              <div class="col-8">
+                <div class="card-body d-flex flex-column h-100 justify-content-between">
+                  <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                  <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                  <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+                </div>
+              </div>
+            </div>
+            <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+              <li class="list-inline-item">
+                <a class="icon-text d-flex align-items-center justify-content-center " href="">
+                  <i class="bi bi-eye-fill pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item  ">
+                <a class="icon-text  d-flex align-items-center justify-content-center  " href="">
+                  <i class="bi bi-hand-thumbs-up-fill pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-heart-fill color-gs pe-1"></i>
+                  <span class="color-gs">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item   ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-chat-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-new p-1" data-label="新書">
+            <div class="row gx-0 mb-1">
+              <img
+                src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60"
+                class="col-4 rounded-start" alt="神注視的孩子">
+              <div class="col-8">
+                <div class="card-body d-flex flex-column h-100 justify-content-between">
+                  <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                  <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                  <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+                </div>
+              </div>
+            </div>
+            <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+              <li class="list-inline-item">
+                <a class="icon-text d-flex align-items-center justify-content-center " href="">
+                  <i class="bi bi-eye-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item  ">
+                <a class="icon-text  d-flex align-items-center justify-content-center  " href="">
+                  <i class="bi bi-hand-thumbs-up-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-heart-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item   ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-chat-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-new p-1" data-label="新書">
+            <div class="row gx-0 mb-1">
+              <img
+                src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60"
+                class="col-4 rounded-start" alt="神注視的孩子">
+              <div class="col-8">
+                <div class="card-body d-flex flex-column h-100 justify-content-between">
+                  <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                  <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                  <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+                </div>
+              </div>
+            </div>
+            <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+              <li class="list-inline-item">
+                <a class="icon-text d-flex align-items-center justify-content-center " href="">
+                  <i class="bi bi-eye-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item  ">
+                <a class="icon-text  d-flex align-items-center justify-content-center  " href="">
+                  <i class="bi bi-hand-thumbs-up-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-heart-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item   ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-chat-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-done p-1" data-label="完結">
+            <div class="row gx-0 mb-1">
+              <img
+                src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60"
+                class="col-4 rounded-start" alt="神注視的孩子">
+              <div class="col-8">
+                <div class="card-body d-flex flex-column h-100 justify-content-between">
+                  <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                  <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                  <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+                </div>
+              </div>
+            </div>
+            <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+              <li class="list-inline-item">
+                <a class="icon-text d-flex align-items-center justify-content-center " href="">
+                  <i class="bi bi-eye-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item  ">
+                <a class="icon-text  d-flex align-items-center justify-content-center  " href="">
+                  <i class="bi bi-hand-thumbs-up-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-heart-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item   ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-chat-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-new p-1" data-label="新書">
+            <div class="row gx-0 mb-1">
+              <img
+                src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60"
+                class="col-4 rounded-start" alt="神注視的孩子">
+              <div class="col-8">
+                <div class="card-body d-flex flex-column h-100 justify-content-between">
+                  <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                  <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                  <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+                </div>
+              </div>
+            </div>
+            <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+              <li class="list-inline-item">
+                <a class="icon-text d-flex align-items-center justify-content-center " href="">
+                  <i class="bi bi-eye-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item  ">
+                <a class="icon-text  d-flex align-items-center justify-content-center  " href="">
+                  <i class="bi bi-hand-thumbs-up-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-heart-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item   ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-chat-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-new p-1" data-label="新書">
+            <div class="row gx-0 mb-1">
+              <img
+                src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60"
+                class="col-4 rounded-start" alt="神注視的孩子">
+              <div class="col-8">
+                <div class="card-body d-flex flex-column h-100 justify-content-between">
+                  <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                  <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                  <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+                </div>
+              </div>
+            </div>
+            <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+              <li class="list-inline-item">
+                <a class="icon-text d-flex align-items-center justify-content-center " href="">
+                  <i class="bi bi-eye-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item  ">
+                <a class="icon-text  d-flex align-items-center justify-content-center  " href="">
+                  <i class="bi bi-hand-thumbs-up-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-heart-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item   ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-chat-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-done p-1" data-label="完結">
+            <div class="row gx-0 mb-1">
+              <img
+                src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60"
+                class="col-4 rounded-start" alt="神注視的孩子">
+              <div class="col-8">
+                <div class="card-body d-flex flex-column h-100 justify-content-between">
+                  <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                  <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                  <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+                </div>
+              </div>
+            </div>
+            <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+              <li class="list-inline-item">
+                <a class="icon-text d-flex align-items-center justify-content-center " href="">
+                  <i class="bi bi-eye-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item  ">
+                <a class="icon-text  d-flex align-items-center justify-content-center  " href="">
+                  <i class="bi bi-hand-thumbs-up-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-heart-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item   ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-chat-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-new p-1" data-label="新書">
+            <div class="row gx-0 mb-1">
+              <img
+                src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60"
+                class="col-4 rounded-start" alt="神注視的孩子">
+              <div class="col-8">
+                <div class="card-body d-flex flex-column h-100 justify-content-between">
+                  <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                  <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                  <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+                </div>
+              </div>
+            </div>
+            <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+              <li class="list-inline-item">
+                <a class="icon-text d-flex align-items-center justify-content-center " href="">
+                  <i class="bi bi-eye-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item  ">
+                <a class="icon-text  d-flex align-items-center justify-content-center  " href="">
+                  <i class="bi bi-hand-thumbs-up-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-heart-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item   ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-chat-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-new p-1" data-label="新書">
+            <div class="row gx-0 mb-1">
+              <img
+                src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60"
+                class="col-4 rounded-start" alt="神注視的孩子">
+              <div class="col-8">
+                <div class="card-body d-flex flex-column h-100 justify-content-between">
+                  <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                  <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                  <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+                </div>
+              </div>
+            </div>
+            <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+              <li class="list-inline-item">
+                <a class="icon-text d-flex align-items-center justify-content-center " href="">
+                  <i class="bi bi-eye-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item  ">
+                <a class="icon-text  d-flex align-items-center justify-content-center  " href="">
+                  <i class="bi bi-hand-thumbs-up-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-heart-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item   ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-chat-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-done p-1" data-label="完結">
+            <div class="row gx-0 mb-1">
+              <img
+                src="https://images.unsplash.com/photo-1578278020792-8aa63ffcdf5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=200&q=60"
+                class="col-4 rounded-start" alt="神注視的孩子">
+              <div class="col-8">
+                <div class="card-body d-flex flex-column h-100 justify-content-between">
+                  <h5 class="card-title fw-bold text-truncate">5555555555555神注視的孩子</h5>
+                  <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>相思染</h6>
+                  <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">伊萊爾遇見了一個奇怪的少年他不會說話 Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. In expedita beatae, nisi vero qui possimus? ...</p>
+                </div>
+              </div>
+            </div>
+            <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+              <li class="list-inline-item">
+                <a class="icon-text d-flex align-items-center justify-content-center " href="">
+                  <i class="bi bi-eye-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item  ">
+                <a class="icon-text  d-flex align-items-center justify-content-center  " href="">
+                  <i class="bi bi-hand-thumbs-up-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-heart-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+              <li class="list-inline-item   ">
+                <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+                  <i class="bi bi-chat-fill  pe-1"></i>
+                  <span class="">999+</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+
+
+  <footer class=" py-3">
     <div class="container-fluid d-flex flex-column align-items-center">
        <!-- footer-logo -->
       <div class="d-flex justify-content-center mb-4">
@@ -147,6 +709,497 @@
     </div>
   </footer>
     
-    <script src="../assets/js/classification-tag.js"></script>
-  </body>
+    <script>
+      // 小說資料
+novelData=[
+  {
+    img:'https://images.unsplash.com/photo-1629992101753-56d196c8aabb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1980&q=80',
+    name:'神注視的孩子',
+    state:'連載中',
+    writer:'相思染',
+    text:'伊萊爾在森林中意外遇見了一個奇怪的少年，他無法說話，但卻散發出神秘的光芒。這位少年的出現引起了一系列奇異的現象，伊萊爾開始追尋少年背後的秘密。他們的旅程帶領讀者穿越神秘的地方，遇見神靈、魔法和未知的力量。隨著故事的深入，伊萊爾逐漸發現，少年的存在關乎神祇的關注，而他們的冒險也將影響整個世界的命運。',
+    classification:"奇幻",
+    warch:88,
+    like:63,
+    favorite:100,
+    comment:93,
+    date:20230105,
+  },
+  {
+    img:'https://images.unsplash.com/photo-1543487945-139a97f387d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cG9zdGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
+    name:'銀河之旅',
+    state:'已完結',
+    writer:'星夜',
+    text:'在艾莉亞平凡的生活中意外發現一本神秘的星圖冊，其中記載著通往遠處星系的路徑。為了實現她的夢想，艾莉亞毅然踏上了一段驚心動魄的銀河之旅。在這個未知的宇宙中，她將面臨千難萬險，結識奇幻的外星生物，解開星際秘密。她的勇氣和智慧將被考驗，而她的選擇將影響著整個銀河的命運。隨著她踏上這場冒險，艾莉亞也逐漸發現自己背後隱藏的驚人身世，並與命運緊密交織在一起。',
+    classification:"奇幻",
+    warch:88,
+    like:63,
+    favorite:100,
+    comment:93,
+    date:20230228,
+  },
+  {
+ img:'https://images.unsplash.com/photo-1584448141569-69f342da535c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9zdGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
+ name: '迷霧城堡',
+ state: '連載中', 
+ writer: '幻影', 
+ text: '艾莉斯在一場突如其來的濃霧中意外發現了一座隱藏在山谷中的城堡。進入城堡後，她發現這座城堡不僅藏著無數的秘密，還充滿了不可思議的魔法力量。在城堡的每個角落，艾莉斯都會遇到各種神秘的生物和人物，每個人物都有著自己的故事和目的。她必須解開謎團、探索城堡的秘密，同時學會操縱魔法以應對不斷變化的挑戰。隨著故事的發展，艾莉斯也逐漸發現她與城堡之間有著深刻的聯繫，她的命運將與這座神秘城堡緊密交織。', 
+ classification: '奇幻', 
+  warch:88,
+   like:89,
+   favorite:105,
+   comment:24,
+     date:20230509,
+},
+  {
+   img:'https://images.unsplash.com/photo-1505864681725-48344595127c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9zdGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
+   name: '星空的約定', 
+   state: '已完結', 
+   writer: '狸貓尾巴', 
+   text: '主人公艾莉莎和亞歷克斯在童年時曾在星空下做下深刻的約定。多年後，當他們的命運再次交錯，他們必須面對曾經的約定，並在宇宙的廣闊中尋找屬於彼此的愛情。這個故事中，兩位主人公經歷了各自的成長和挑戰，他們在星際間的冒險和相處中重新發現了彼此的吸引力。星空下的美麗風景成為他們情感的見證，而約定則成為他們心靈的聯繫。這段跨越星空的愛情將挑戰時間和空間的界限，讓讀者感受到愛情的力量和情感的深度。', 
+   classification: '戀愛', 
+   warch:100,
+   like:64,
+   favorite:103,
+   comment:55,
+     date:20230315,
+  },
+  {
+  img:'https://images.unsplash.com/photo-1580130601254-05fa235abeab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+  name: '幻想世界之門', 
+  state: '連載中', 
+  writer: 'shadow', 
+  text: '人公凱蒂在一次偶然中發現了這扇神秘的門，進入之後，她發現自己置身於一個充滿驚奇和危險的異世界。在這個幻想之境，凱蒂將面臨不同種族、魔法師和怪物，她必須學會使用魔法、結交朋友，並尋找回到現實世界的方法。隨著她的成長，她也揭開了這個幻想世界的秘密，並發現自己在這個世界中扮演著重要的角色。', 
+  classification: '穿越',
+  warch:96,
+  like:44,
+  favorite:9,
+  comment:5,
+   date:20230423,
+},
+  {
+    img:'https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+  name: '魔法學院的奇幻冒險', 
+  state: '已完結', 
+  writer: '奇幻法師', 
+  text: '學院中藏有無數神秘的秘密和魔法力量，學生們學習各種魔法技巧並探索奇幻的世界。艾莉克斯與新朋友們結成團隊，一同面對巨龍、惡魔和迷宮，解開學院深處的謎團。在奇幻的冒險過程中，他們不僅學習到魔法的力量，更發現了友情和勇氣的重要性，並肩戰鬥，保衛學院的和平。', 
+  classification: '奇幻',
+  warch:59,
+  like:63,
+  favorite:10,
+  comment:61,
+   date:20230329,
+},
+  {
+  img:'https://images.unsplash.com/photo-1497514440240-3b870f7341f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+  name: '失落的時光', 
+  state: '連載中', 
+  writer: '時一', 
+  text: '在一場不可思議的時光扭曲中，可可意外穿越到了過去的世界。她發現這個世界與她熟悉的現實有著巨大的不同，古老的城市、神秘的魔法和失傳的文明在她眼前展開。可可必須探索這個失落的時光，解開過去的謎團，同時面對時間的危機，找到回到現實的方法。這段失落時光的冒險將挑戰她的智慧和勇氣，並讓她重新思考過去、現在和未來的連接。', 
+  classification: '歷史', 
+  warch:6,
+  like:9,
+  favorite:3,
+  comment:4,
+     date:20230418,
+},
+  {
+ img:'https://images.unsplash.com/photo-1584448097764-374f81551427?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',   
+ name: '月光下的秘密', 
+ state: '連載中', 
+ writer: '夜光', 
+ text: '在寧靜的夜晚，月光映照下，主人公愛莉發現了一個古老的庭院，藏著無數秘密。庭院中的每個角落都有故事，每個花朵都記錄著情感。當愛莉深入庭院，她遇見了一個令人神往的陌生人，她的身份和秘密似乎和庭院有著千絲萬縷的聯繫。隨著故事的展開，愛莉漸漸探索出庭院中的秘密，以及這個陌生人與她的命運之間的交錯。', 
+ classification: '百合', 
+ warch:100,
+ like:97,
+ favorite:93,
+ comment:43,
+  date:20230714,
+},
+  {
+ img:'https://images.unsplash.com/photo-1604161546853-1a097fbc30fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60', 
+ name: '池塘裡的人影', 
+ state: '連載中', 
+ writer: '神秘筆者', 
+ text: '古老池塘的秘密，每當月光灑在水面上，湧現出詭異的人影。米可被卷入這個恐怖的事件中，她追尋著人影的來源，卻發現事件背後更深層的恐怖真相。池塘裡的人影似乎是一個被困於幽冥的靈魂，他的往事和怨恨將讓人感到心驚膽戰。隨著故事的發展，米可必須解開古老的詛咒，解救這個被囚禁的靈魂，同時也將自己置身於恐怖的威脅之下。', 
+ classification: '恐怖靈異',
+ warch:105,
+ like:99,
+ favorite:50,
+ comment:35,
+  date:20230813,
+},
+  {
+ img:'https://images.unsplash.com/photo-1580130718810-358e5e8af61b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+ name: '時間迷宮', 
+ state: '已完結', 
+ writer: '巧克', 
+ text: '大衛是一位天才時間學家，當他發現了一個能夠穿越不同時空的裝置後，陷入了一場前所未有的謎團中。他的朋友凱薩琳在一個晚上突然失踪，而她的失踪似乎和時間裝置有關。大衛必須進入這個時間迷宮，解開時間扭曲的謎團，找到凱薩琳的下落。然而，隨著每個時空的解謎，他發現整個事件牽涉著更深的陰謀，時間的秘密和人性的真相逐漸浮出水面。', 
+ classification: '懸疑推理',
+ warch:168,
+ like:33,
+ favorite:34,
+ comment:98,
+  date:20231130,
+}, 
+  {
+ img:'https://images.unsplash.com/photo-1623461317267-64b904c64534?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+ name: '風之歌', 
+ state: '連載中', 
+ writer: '丸子', 
+ text: '一位年輕的冒險家，她追隨著風之歌的輝影，穿越古老的森林、崇山峻嶺，展開了一段驚心動魄的旅程。在她的冒險中，她遇見了神秘的生物、解開了古老的謎團，並逐漸發現自己與風之歌之間的聯繫。隨著她的成長，她也將影響著這個奇幻世界的未來，展開一段屬於她的傳奇。', 
+ classification: '奇幻',
+ warch:8883,
+ like:888,
+ favorite:1115,
+ comment:333,
+     date:20230926,
+},
+  {
+ img:'https://images.unsplash.com/photo-1580130544326-80fc93876841?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+ name: '夢幻花園的謎', 
+ state: '連載中', 
+ writer: '雷恩', 
+ text: '一個美麗的花園充滿了奧秘，每當夜幕低垂，花園內總會發生一些難以解釋的現象。一名熱愛解謎的探險家，她受到花園的謎團吸引，決心揭開它的真相。然而，她在探索的過程中，不僅發現了花園居民的隱藏秘密，還發現了一連串看似不可能的事件。探險家必須運用她的推理能力，解開謎團，揭露背後的陰謀和真相。', 
+ classification: '懸疑推理',
+ warch:99,
+ like:85,
+ favorite:93,
+ comment:43,
+     date:20231025,
+},
+  {
+  img:'https://images.unsplash.com/photo-1596380490954-dc652ce48908?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+  name: '民雄之旅', 
+  state: '已完結', 
+  writer: '幽靈', 
+  text: '主人公艾倫決定踏上一趟前所未有的旅程，前往一個神秘的小鎮——民雄。然而，一旦踏入小鎮，他感受到一股無法言喻的詭異氛圍，並發現居民們散發出怪異的行為。民雄的街道彷彿被看不見的力量支配，每個轉角都隱藏著詭譎的秘密。艾倫的調查揭開了一段被埋藏已久的黑暗歷史，他必須勇敢面對靈異現象、陰影的回憶，並試圖逃脫小鎮的恐怖困境。', 
+  classification: '恐怖靈異', 
+  warch:109,
+  like:89,
+  favorite:94,
+  comment:46,
+    date:20230229,
+  },
+  {
+  img:'https://images.unsplash.com/photo-1584445652057-5c90079abc48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+  name: '倫敦之夜', 
+  state: '連載中', 
+  writer: 'Alpha', 
+  text: '艾倫在倫敦這座繁忙的城市裡，經歷了一個充滿轉折和探索的夜晚。從高樓大廈到小巷背街，她遇見了各種各樣的人物，每個人都有著自己的故事和渴望。在這個環繞著現代生活的迷宮中，艾倫尋找著自己的方向，並學會了珍惜與他人的連結。《倫敦之夜》通過獨特的視角，反映了現代社會的多樣性和挑戰，同時也闡述了個人成長和情感的故事。', 
+  classification: '現代',
+  warch:289,
+  like:85,
+  favorite:93,
+  comment:43,
+     date:20230619,
+  },
+  {
+  img:'https://images.unsplash.com/photo-1595752776689-aebef37b5d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODF8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+  name: '空中冒險家', 
+  state: '連載中', 
+  writer: '大黑', 
+  text: '在這個被恐龍統治的異境中，主人公傑克被困於未知之地。他必須運用前所未有的科技裝備，與史前巨獸展開驚險對決。然而，隨著故事的發展，他發現這個侏儸紀並非表面看起來那麼簡單，存在著超越科學的神秘力量。傑克的冒險不僅是一場對抗恐龍的挑戰，更是一場尋找真相的旅程，揭開時間和生命之間的驚人連結。', 
+  classification: '科幻',
+  warch:300,
+  like:153,
+  favorite:99,
+  comment:43,
+   date:20230614,
+},
+  {
+  img:'https://images.unsplash.com/photo-1592069743389-b34937182705?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+  name: '魔法之心', 
+  state: '連載中', 
+  writer: '璇子', 
+  text: '主人公亞歷克斯在一個魔法世界中，意外發現了一顆神秘的魔法之心，它擁有強大的力量，卻需要特殊的魔法來解封。在尋求解答的過程中，他遇見了愛莉克斯，一位神秘的魔法師。兩人之間的吸引力不斷加深，他們共同踏上解開魔法之心秘密的旅程。隨著故事的進展，他們不僅揭開了魔法之心的真正力量，還發現了彼此內心深處的情感。這是一個關於魔法、愛情和成長的動人故事。', 
+  classification: 'BL',
+  warch:333,
+  like:94,
+  favorite:66,
+  comment:150,
+   date:20231230,
+  }, 
+  {
+  img:'https://images.unsplash.com/photo-1610616817237-dff4b556cce6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODl8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+  name: '失落的城市', 
+  state: '連載中', 
+  writer: '神秘筆者', 
+  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing…lit. Sed eget sapien quis justo varius tincidunt.', 
+  classification: '18+',
+  warch:490,
+  like:150,
+  favorite:67,
+  comment:111,
+   date:20230520,
+  }
+  ];
+
+
+
+// 搜尋渲染
+// DOM
+      // seach input text
+      const searchText = document.querySelector('#searchText');
+      // 搜索按钮
+      const searchButton = document.querySelector('#searchButton');
+      // 刪除關鍵字按钮
+      const deleteButton = document.querySelector('#deleteButton');
+      // 類別標籤
+     const classification = document.querySelectorAll('.tag-row button');
+      //資料狀態
+      const radioButtons = document.querySelectorAll('[name="check"]');
+      const cardBox = document.querySelector('.card-box')
+      
+      // 排序按鈕
+      const descButton = document.getElementById('desc-tab');
+      const ascButton = document.getElementById('asc-tab');
+      const hotButton = document.getElementById('hot-tab');
+
+// 初始化篩選條件(全域)
+let searchValue = '';
+let selectedTag = '';
+let selectedState = '';
+let filteredNovels=[];
+
+// input輸入監聽
+  // search按鈕
+searchButton.addEventListener('click', event => {
+    event.preventDefault();
+    if(searchText.value!==""){
+    searchValue = searchText.value.trim(); // 去除前後空格
+    updateFilteredNovels();
+    };
+});
+  //enter輸入
+searchText.addEventListener('keydown', event => {
+  event.preventDefault(); // 阻止表单默认提交行为
+
+  searchValue = searchText.value.trim(); // 去除前後空格
+
+  if (searchValue !== "" &&event.key === 'Enter') { 
+        event.preventDefault();
+        updateFilteredNovels();
+    }
+});
+ 
+// 篩選類別按鈕監聽
+  // 添加点击事件监听器以取消 classification 的焦点状态并重新篩选
+document.addEventListener('click', event => {
+    const classificationContainer = document.querySelector('.tag-row'); // 请将选择器替换为适当的选择器
+    const classificationButtons = classificationContainer.querySelectorAll('.classification-button'); // 假设分类按钮具有该类名
+    if (!classificationContainer.contains(event.target)) {
+        classificationButtons.forEach(button => {
+            button.blur(); // 取消按钮的焦点状态
+        });
+        selectedTag = ''; // 清空 selectedTag
+        updateFilteredNovels();
+    }
+});
+
+
+  // 为每个 classification 按钮添加 click 事件监听器
+  classification.forEach(button => {
+      button.addEventListener('click', e => {
+          e.preventDefault();
+          if (e.target.value !== "") {
+              selectedTag = e.target.value;
+          } else {
+              selectedTag = '';
+          }
+          updateFilteredNovels();
+      });
+  });
+
+
+// 資料狀態radio監聽
+  // 添加点击事件监听器以取消所有 radioButton 的焦点
+  document.addEventListener('click', event => {
+      if (!event.target.matches('input[type="radio"]')) {
+          radioButtons.forEach(radioButton => {
+              radioButton.checked = false;
+          });
+          selectedState = ''; // 重置 selectedState
+          updateFilteredNovels();
+      }
+  });
+
+  // 为每个 radioButton 添加 change 事件监听器
+  radioButtons.forEach(radioButton => {
+      radioButton.addEventListener('change', event => {
+          if (event.target.checked) {
+              selectedState = event.target.value;
+              updateFilteredNovels();
+          }
+      });
+  });
+
+// 監聽排序按鈕點擊事件
+descButton.addEventListener('click', () => {
+  sortNovels('desc');
+});
+
+ascButton.addEventListener('click', () => {
+  sortNovels('asc');
+});
+
+hotButton.addEventListener('click', () => {
+  sortNovels('hot');
+});
+
+// 排序小說數據函數
+function sortNovels(sortType) {
+  switch (sortType) {
+    case 'desc':
+      filteredNovels.sort((a, b) => b.date - a.date);
+      break;
+    case 'asc':
+      filteredNovels.sort((a, b) => a.date - b.date);
+      break;
+    case 'hot':
+      filteredNovels.sort((a, b) => (b.watch + b.like + b.favorite + b.comment) - (a.watch + a.like + a.favorite + a.comment));
+      break;
+    default:
+      break;
+  }
+
+  // 更新小說列表顯示
+  updateNovelList(filteredNovels);
+}
+
+
+// 更新篩選後的小說列表
+function updateFilteredNovels() {
+    filteredNovels = novelData.filter(item => {
+        const nameMatch = item.name.toLowerCase().includes(searchValue);
+        const writerMatch = item.writer.toLowerCase().includes(searchValue);
+        const textMatch = item.text.toLowerCase().includes(searchValue);
+
+        let tagStateMatch = true; // 默认情况下不进行筛选
+
+        if (selectedTag && selectedState) {
+            const tagMatch = item.classification === selectedTag;
+            const stateMatch = item.state === selectedState;
+            tagStateMatch = tagMatch && stateMatch;
+        } else if (selectedTag) {
+            tagStateMatch = item.classification === selectedTag;
+        } else if (selectedState) {
+            tagStateMatch = item.state === selectedState;
+        }
+
+        // 考虑只有 searchValue 为 true 的情况
+        if (searchValue) {
+            return (nameMatch || writerMatch || textMatch) && tagStateMatch;
+        } else {
+            return tagStateMatch; // 只根据 selectedTag 和 selectedState 筛选
+        }
+    });
+    updateNovelList(filteredNovels);
+    
+    // 清空 searchValue
+    searchValue = '';
+    searchText.value = ''; // 如果有对应的 input 元素
+}
+
+// 更新小說列表選染
+function updateNovelList(novels) {
+    let str="";
+    if(novels.length<1){
+      str+=`<p class="text-center">查無搜尋內容</p>`
+      cardBox.innerHTML =str;
+    }else{
+    novels.forEach(item=>{
+      if(item.state==="連載中"){
+      str+=`<div class="col-md-6 col-lg-4">
+      <div class="card card-new p-1" data-label="${item.state}">
+        <div class="row gx-0 mb-1">
+          <img src="${item.img}" class="col-4 rounded-start" alt="${item.name} "style="height:180px">
+          <div class="col-8">
+            <div class="card-body d-flex flex-column h-100 justify-content-between">
+              <h5 class="card-title fw-bold text-truncate">${item.name}</h5>
+              <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>${item.writer}</h6>
+              <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">${item.text}</p>
+            </div>
+          </div>
+        </div>
+        <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+          <li class="list-inline-item">
+            <a class="icon-text d-flex align-items-center justify-content-center " href="">
+              <i class="bi bi-eye-fill  pe-1"></i>
+              <span class="">${item.warch}</span>
+            </a>
+          </li>
+          <li class="list-inline-item  ">
+            <a class="icon-text  d-flex align-items-center justify-content-center  " href="">
+              <i class="bi bi-hand-thumbs-up-fill pe-1"></i>
+              <span class="">${item.like}</span>
+            </a>
+          </li>
+          <li class="list-inline-item ">
+            <a class="icon-text d-flex align-items-center justify-content-center" href="">
+              <i class="bi bi-heart-fill pe-1"></i>
+              <span class="">${item.favorite}</span>
+            </a>
+          </li>
+          <li class="list-inline-item   ">
+            <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+              <i class="bi bi-chat-fill  pe-1"></i>
+              <span class="">${item.comment}</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>`;}
+      else{
+        str+=`<div class="col-md-6 col-lg-4">
+      <div class="card card-done p-1" data-label="${item.state}">
+        <div class="row gx-0 mb-1">
+          <img src="${item.img}" class="col-4 rounded-start" alt="${item.name}" style="height:180px">
+          <div class="col-8">
+            <div class="card-body d-flex flex-column h-100 justify-content-between">
+              <h5 class="card-title fw-bold text-truncate">${item.name}</h5>
+              <h6 class="card-subtitle text-primary mb-2"><i class="bi bi-person pe-1"></i>${item.writer}</h6>
+              <p class="card-text mb-0 w-100 overflow-auto" style="height:4.5rem">${item.text}</p>
+            </div>
+          </div>
+        </div>
+        <ul class="icons-list fz12 p-0 m-0 d-flex justify-content-between">
+          <li class="list-inline-item">
+            <a class="icon-text d-flex align-items-center justify-content-center " href="">
+              <i class="bi bi-eye-fill  pe-1"></i>
+              <span class="">${item.warch}</span>
+            </a>
+          </li>
+          <li class="list-inline-item  ">
+            <a class="icon-text  d-flex align-items-center justify-content-center  " href="">
+              <i class="bi bi-hand-thumbs-up-fill  pe-1"></i>
+              <span class="">${item.like}</span>
+            </a>
+          </li>
+          <li class="list-inline-item ">
+            <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+              <i class="bi bi-heart-fill  pe-1"></i>
+              <span class="">${item.favorite}</span>
+            </a>
+          </li>
+          <li class="list-inline-item   ">
+            <a class="icon-text  d-flex align-items-center justify-content-center" href="">
+              <i class="bi bi-chat-fill  pe-1"></i>
+              <span class="">${item.comment}</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>`;
+      }
+    });
+    cardBox.innerHTML =str;
+};
+}
+
+// 預設渲染
+updateNovelList(novelData);
+    </script>
+</body>
+
 </html>
