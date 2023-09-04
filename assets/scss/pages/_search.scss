@@ -1,0 +1,22 @@
+// search樣式清除 
+.search-form {
+    .btn {
+        color: $secondary;
+        border: none;
+        box-shadow: 0;
+        &:focus,&:hover{
+            border:none;
+            color:$cyan;
+        }
+    }
+}
+
+.search-bar-nav {
+    .nav-link {
+
+        &:hover,
+        &:checked {
+            background-color: #f2f2f2;
+        }
+    }
+}
