@@ -1,18 +1,130 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>討論區</title>
-    <link rel="icon" href="../assets/images/logo/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>討論區</title>
+  <link rel="icon" href="../assets/images/logo/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <div class="container">
+      <!-- 討論區nav -->
+      <nav class="d-flex justify-content-between align-items-center pb-2 border-bottom border-2 border-warning mb-4">
+        <h2 class="fw-bold">討論區</h2>
+        <div>
+          <a class="small-btn tertiary-btn me-2" href=""><i class="bi bi-bookmark-star-fill me-1"></i>我的書籤</a>
+          <a class="small-btn primary-btn" href=""><i class="bi bi-pencil-fill"></i>發文</a>
+        </div>
+      </nav>
+       <!-- 討論區nav -->
+        <!-- 發文modal start-->
+        <div class="modal">
+
+        </div>
+        <!-- 發文modal end-->
+      <div class="card w-100 p-2 mb-4">
+        <div class="card-header d-flex bg-white border-0">
+          <div class="d-flex align-items-center">
+            <img src="../assets/images/user-1.png" alt="user image" style="width: 40px;height: 40px;"
+              class="rounded-circle me-2">
+            <span class="fs-3">小花</span>
+          </div>
+            <button type="button" class=" outline-category ms-auto fs-7">奇幻</button>
+          
+        </div>
+        <div class="card-body text-center ">
+          <p class="card-text fs-5">可以推薦不錯的奇幻小說給我嗎?</p>
+        </div>
+        <div class="card-footer bg-white d-flex border-0 text-dark">
+          <ul class="d-flex w-50 justify-content-between  fs-8">
+            <li><a href=""><i class="bi bi-share-fill text-tertiary pe-1"></i></a></li>
+            <li><i class="bi bi-hand-thumbs-up text-tertiary pe-1">999+</i></li>
+            <li><i class="bi bi-chat-fill text-tertiary pe-1">999+</i></li>
+            <li><i class="bi bi-bookmark-star-fill text-tertiary pe-1">999+</i></li>
+          </ul>
+          <time class="ms-auto text-secondary">2023/4/15 15:00</time>
+        </div>
+      </div>
+      <div class="card w-100 p-2 mb-4">
+        <div class="card-header d-flex bg-white border-0">
+          <div class="d-flex align-items-center">
+            <img src="../assets/images/user-2.png" alt="user image" style="width: 40px;height: 40px;"
+              class="rounded-circle me-2">
+            <span class="fs-3">檸檬紅茶</span>
+          </div>
+            <button type="button" class=" outline-category ms-auto fs-7">現代</button>
+          
+        </div>
+        <div class="card-body text-center ">
+          <p class="card-text fs-5">今天午餐要吃什麼比較好?<br>
+            在線求建議</p>
+        </div>
+        <div class="card-footer bg-white d-flex border-0 text-dark">
+          <ul class="d-flex w-50 justify-content-between  fs-8">
+            <li><a href=""><i class="bi bi-share-fill text-tertiary pe-1"></i></a></li>
+            <li><i class="bi bi-hand-thumbs-up text-tertiary pe-1">999+</i></li>
+            <li><i class="bi bi-chat-fill text-tertiary pe-1">999+</i></li>
+            <li><i class="bi bi-bookmark-star-fill text-tertiary pe-1">999+</i></li>
+          </ul>
+          <time class="ms-auto text-secondary">2023/4/12 15:00</time>
+        </div>
+      </div>
+      <div class="card w-100 p-2 mb-4">
+        <div class="card-header d-flex bg-white border-0">
+          <div class="d-flex align-items-center">
+            <img src="../assets/images/user-3.png" alt="user image" style="width: 40px;height: 40px;"
+              class="rounded-circle me-2">
+            <span class="fs-3">芬達汽水</span>
+          </div>
+            <button type="button" class=" outline-category ms-auto fs-7">推理</button>
+          
+        </div>
+        <div class="card-body text-center ">
+          <p class="card-text fs-5">大家覺得名偵探柯北這一部的兇手是誰?</p>
+        </div>
+        <div class="card-footer bg-white d-flex border-0 text-dark">
+          <ul class="d-flex w-50 justify-content-between  fs-8">
+            <li><a href=""><i class="bi bi-share-fill text-tertiary pe-1"></i></a></li>
+            <li><i class="bi bi-hand-thumbs-up text-tertiary pe-1">999+</i></li>
+            <li><i class="bi bi-chat-fill text-tertiary pe-1">999+</i></li>
+            <li><i class="bi bi-bookmark-star-fill text-tertiary pe-1">999+</i></li>
+          </ul>
+          <time class="ms-auto text-secondary">2023/4/10 15:00</time>
+        </div>
+      </div>
+      <div class="card w-100 p-2 mb-4">
+        <div class="card-header d-flex bg-white border-0">
+          <div class="d-flex align-items-center">
+            <img src="../assets/images/user-1.png" alt="user image" style="width: 40px;height: 40px;"
+              class="rounded-circle me-2">
+            <span class="fs-3">七喜</span>
+          </div>
+            <button type="button" class=" outline-category ms-auto fs-7">恐怖靈異</button>
+          
+        </div>
+        <div class="card-body text-center ">
+          <p class="card-text fs-5">七月快到了，有沒有人遇過什麼靈異事件?想聽分享:D?</p>
+        </div>
+        <div class="card-footer bg-white d-flex border-0 text-dark">
+          <ul class="d-flex w-50 justify-content-between fs-8">
+            <li><a href=""><i class="bi bi-share-fill text-tertiary pe-1"></i></a></li>
+            <li><i class="bi bi-hand-thumbs-up text-tertiary pe-1">999+</i></li>
+            <li><i class="bi bi-chat-fill text-tertiary pe-1">999+</i></li>
+            <li><i class="bi bi-bookmark-star-fill text-tertiary pe-1">999+</i></li>
+          </ul>
+          <time class="ms-auto text-secondary">2023/4/09 15:00</time>
+        </div>
+      </div>
+    </div>
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>
