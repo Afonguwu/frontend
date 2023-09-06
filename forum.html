@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>討論區</title>
   <link rel="icon" href="/frontend/assets/favicon-0f29a993.ico" type="image/x-icon">
-  <script type="module" crossorigin src="/frontend/assets/main-d69da82e.js"></script>
+  <script type="module" crossorigin src="/frontend/assets/main-dd75ef47.js"></script>
   <link rel="stylesheet" href="/frontend/assets/main-8f3ba5be.css">
 </head>
 
@@ -102,8 +102,8 @@
     
   <!-- search-md-none -->
       <form class="d-md-none w-100 pt-2">
-        <button class="btn position-absolute" type="submit"><i class="bi bi-search"></i></button>
-        <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="padding-left:3rem">
+        <button class="btn position-absolute" type="submit" id="goSearchFillBtn"><i class="bi bi-search"></i></button>
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="padding-left:3rem" d="goSearchFillText">
       </form>
     </div>
   </header>
@@ -129,7 +129,7 @@
         <h2 class="fw-bold">討論區</h2>
         <div>
           <a class="small-btn tertiary-btn me-2" href=""><i class="bi bi-bookmark-star-fill me-1"></i>我的書籤</a>
-          <a class="small-btn primary-btn" href=""><i class="bi bi-pencil-fill"></i>發文</a>
+          <a class="small-btn primary-btn" href=""><i class="bi bi-pencil-fill me-1"></i>發文</a>
         </div>
       </nav>
        <!-- 討論區nav -->
@@ -248,7 +248,7 @@
           <a class="nav-link  link-light" href="#">隱私權政策</a>
         </li>
         <li class="">
-          <a class="nav-link link-light" href="#">使用說明</a>
+          <a class="nav-link link-light" href="faq.html">使用說明</a>
         </li>
       </ul>
       <p class="text-warning">
