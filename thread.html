@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>小說內容</title>
+    <title>討論串</title>
     <link rel="icon" href="/frontend/assets/favicon-0f29a993.ico" type="image/x-icon">
+
     <script type="module" crossorigin src="/frontend/assets/main-e6b0c395.js"></script>
     <link rel="stylesheet" href="/frontend/assets/main-1ea6ec2d.css">
   </head>
@@ -120,8 +121,7 @@
       </div>
     </div>
   </div>
-</div>
-
+</div> 
     <footer class=" py-3">
     <div class="container-fluid d-flex flex-column align-items-center">
        <!-- footer-logo -->
@@ -147,5 +147,12 @@
     </div>
   </footer>
     
+    <script>
+      ClassicEditor
+          .create( document.querySelector( '#editor' ) )
+          .catch( error => {
+              console.error( error );
+          } );
+  </script>
   </body>
 </html>
