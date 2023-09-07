@@ -1,0 +1,32 @@
+// features, qa buttons
+.rounded-start {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.rounded-end {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+// carousel-indicators
+.carousel-indicators {
+  display: none;
+}
+
+.custom-indicators {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.custom-indicator {
+  color: grey;
+  font-size: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.custom-indicator.active {
+  color: #000;
+}
