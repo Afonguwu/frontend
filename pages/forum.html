@@ -1,18 +1,266 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>討論區</title>
-    <link rel="icon" href="../assets/images/logo/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>討論區</title>
+  <link rel="icon" href="../assets/images/logo/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <div class="container">
+      <!-- 討論區nav -->
+      <nav class="d-flex justify-content-between align-items-center pb-2 border-bottom border-2 border-warning mb-4">
+        <h2 class="fw-bold">討論區</h2>
+        <div>
+          <a class="small-btn tertiary-btn me-2" href=""><i class="bi bi-bookmark-star-fill me-1"></i>我的書籤</a>
+          <a class="small-btn primary-btn" href="post-editor.html"><i class="bi bi-pencil-fill me-1"></i>發文</a>
+        </div>
+      </nav>
+      <!-- 討論區nav -->
+      <div class="forum-card-list justify-content-center justify-content-md-between d-flex flex-wrap">
+        <div class="card  p-2 mb-4 ">
+          <div class="card-header d-flex bg-white border-0">
+            <div class="d-flex align-items-center">
+              <img src="../assets/images/user-1.png" alt="user image" style="width: 40px;height: 40px;"
+                class="rounded-circle me-2">
+              <span class="fs-3">小花</span>
+            </div>
+            <button type="button" class=" outline-category ms-auto fs-7">奇幻</button>
+
+          </div>
+          <div class="card-body text-center position-relative">
+            <p class="card-text fs-5"><a href="thread.html" class="stretched-link link-dark">可以推薦不錯的奇幻小說給我嗎?</a></p>
+          </div>
+          <div class="card-footer bg-white d-flex border-0 text-dark">
+            <ul class="d-flex w-50 justify-content-between  fs-8">
+              <li><a href=""><i class="bi bi-share-fill text-tertiary pe-1"></i></a></li>
+              <li><a href=""><i class="bi bi-bookmark-star-fill text-tertiary pe-1"></i></a></li>
+              <li><i class="bi bi-hand-thumbs-up text-tertiary pe-1">999+</i></li>
+              <li><i class="bi bi-chat-fill text-tertiary pe-1">999+</i></li>
+            </ul>
+            <time class="ms-auto text-secondary">2023/04/15 15:00</time>
+          </div>
+        </div>
+        <div class="card  p-2 mb-4 ">
+          <div class="card-header d-flex bg-white border-0">
+            <div class="d-flex align-items-center">
+              <img src="../assets/images/user-2.png" alt="user image" style="width: 40px;height: 40px;"
+                class="rounded-circle me-2">
+              <span class="fs-3">檸檬紅茶</span>
+            </div>
+            <button type="button" class=" outline-category ms-auto fs-7">現代</button>
+
+          </div>
+          <div class="card-body text-center position-relative">
+            <p class="card-text fs-5"><a href="thread.html" class="stretched-link link-dark">今天午餐要吃什麼比較好?<br>
+                在線求建議</a></p>
+          </div>
+          <div class="card-footer bg-white d-flex border-0 text-dark">
+            <ul class="d-flex w-50 justify-content-between  fs-8">
+              <li><a href=""><i class="bi bi-share-fill text-tertiary pe-1"></i></a></li>
+              <li><a href=""><i class="bi bi-bookmark-star-fill text-tertiary pe-1"></i></a></li>
+              <li><i class="bi bi-hand-thumbs-up text-tertiary pe-1">999+</i></li>
+              <li><i class="bi bi-chat-fill text-tertiary pe-1">999+</i></li>
+            </ul>
+            <time class="ms-auto text-secondary">2023/04/12 15:00</time>
+          </div>
+        </div>
+        <div class="card  p-2 mb-4 ">
+          <div class="card-header d-flex bg-white border-0">
+            <div class="d-flex align-items-center">
+              <img src="../assets/images/user-3.png" alt="user image" style="width: 40px;height: 40px;"
+                class="rounded-circle me-2">
+              <span class="fs-3">芬達汽水</span>
+            </div>
+            <button type="button" class=" outline-category ms-auto fs-7">推理</button>
+
+          </div>
+          <div class="card-body text-center position-relative">
+            <p class="card-text fs-5"><a href="thread.html" class="stretched-link link-dark">大家覺得名偵探柯北這一部的兇手是誰?</a></p>
+          </div>
+          <div class="card-footer bg-white d-flex border-0 text-dark">
+            <ul class="d-flex w-50 justify-content-between  fs-8">
+              <li><a href=""><i class="bi bi-share-fill text-tertiary pe-1"></i></a></li>
+              <li><a href=""><i class="bi bi-bookmark-star-fill text-tertiary pe-1"></i></a></li>
+              <li><i class="bi bi-hand-thumbs-up text-tertiary pe-1">999+</i></li>
+              <li><i class="bi bi-chat-fill text-tertiary pe-1">999+</i></li>
+            </ul>
+            <time class="ms-auto text-secondary">2023/04/10 15:00</time>
+          </div>
+        </div>
+        <div class="card  p-2 mb-4 ">
+          <div class="card-header d-flex bg-white border-0">
+            <div class="d-flex align-items-center">
+              <img src="../assets/images/user-1.png" alt="user image" style="width: 40px;height: 40px;"
+                class="rounded-circle me-2">
+              <span class="fs-3">七喜</span>
+            </div>
+            <button type="button" class=" outline-category ms-auto fs-7">恐怖靈異</button>
+
+          </div>
+          <div class="card-body text-center position-relative">
+            <p class="card-text fs-5"><a href="thread.html"
+                class="stretched-link link-dark">七月快到了，有沒有人遇過什麼靈異事件?想聽分享:D?</a></p>
+          </div>
+          <div class="card-footer bg-white d-flex border-0 text-dark">
+            <ul class="d-flex w-50 justify-content-between fs-8">
+              <li><a href=""><i class="bi bi-share-fill text-tertiary pe-1"></i></a></li>
+              <li><a href=""><i class="bi bi-bookmark-star-fill text-tertiary pe-1"></i></a></li>
+              <li><i class="bi bi-hand-thumbs-up text-tertiary pe-1">999+</i></li>
+              <li><i class="bi bi-chat-fill text-tertiary pe-1">999+</i></li>
+            </ul>
+            <time class="ms-auto text-secondary">2023/04/09 15:00</time>
+          </div>
+        </div>
+        <div class="card  p-2 mb-4  ">
+          <div class="card-header d-flex bg-white border-0">
+            <div class="d-flex align-items-center">
+              <img src="../assets/images/user-1.png" alt="user image" style="width: 40px;height: 40px;"
+                class="rounded-circle me-2">
+              <span class="fs-3">小花</span>
+            </div>
+            <button type="button" class=" outline-category ms-auto fs-7">奇幻</button>
+
+          </div>
+          <div class="card-body text-center position-relative">
+            <p class="card-text fs-5"><a href="thread.html" class="stretched-link link-dark">可以推薦不錯的奇幻小說給我嗎?</a></p>
+          </div>
+          <div class="card-footer bg-white d-flex border-0 text-dark">
+            <ul class="d-flex w-50 justify-content-between  fs-8">
+              <li><a href=""><i class="bi bi-share-fill text-tertiary pe-1"></i></a></li>
+              <li><a href=""><i class="bi bi-bookmark-star-fill text-tertiary pe-1"></i></a></li>
+              <li><i class="bi bi-hand-thumbs-up text-tertiary pe-1">999+</i></li>
+              <li><i class="bi bi-chat-fill text-tertiary pe-1">999+</i></li>
+            </ul>
+            <time class="ms-auto text-secondary">2023/04/08 15:00</time>
+          </div>
+        </div>
+        <div class="card  p-2 mb-4 ">
+          <div class="card-header d-flex bg-white border-0">
+            <div class="d-flex align-items-center">
+              <img src="../assets/images/user-2.png" alt="user image" style="width: 40px;height: 40px;"
+                class="rounded-circle me-2">
+              <span class="fs-3">檸檬紅茶</span>
+            </div>
+            <button type="button" class=" outline-category ms-auto fs-7">現代</button>
+
+          </div>
+          <div class="card-body text-center position-relative">
+            <p class="card-text fs-5"><a href="thread.html" class="stretched-link link-dark">今天午餐要吃什麼比較好?<br>
+                在線求建議</a></p>
+          </div>
+          <div class="card-footer bg-white d-flex border-0 text-dark">
+            <ul class="d-flex w-50 justify-content-between  fs-8">
+              <li><a href=""><i class="bi bi-share-fill text-tertiary pe-1"></i></a></li>
+              <li><a href=""><i class="bi bi-bookmark-star-fill text-tertiary pe-1"></i></a></li>
+              <li><i class="bi bi-hand-thumbs-up text-tertiary pe-1">999+</i></li>
+              <li><i class="bi bi-chat-fill text-tertiary pe-1">999+</i></li>
+            </ul>
+            <time class="ms-auto text-secondary">2023/04/02 15:00</time>
+          </div>
+        </div>
+        <div class="card  p-2 mb-4 ">
+          <div class="card-header d-flex bg-white border-0">
+            <div class="d-flex align-items-center">
+              <img src="../assets/images/user-3.png" alt="user image" style="width: 40px;height: 40px;"
+                class="rounded-circle me-2">
+              <span class="fs-3">芬達汽水</span>
+            </div>
+            <button type="button" class=" outline-category ms-auto fs-7">推理</button>
+
+          </div>
+          <div class="card-body text-center position-relative">
+            <p class="card-text fs-5"><a href="thread.html" class="stretched-link link-dark">大家覺得名偵探柯北這一部的兇手是誰?</a></p>
+          </div>
+          <div class="card-footer bg-white d-flex border-0 text-dark">
+            <ul class="d-flex w-50 justify-content-between  fs-8">
+              <li><a href=""><i class="bi bi-share-fill text-tertiary pe-1"></i></a></li>
+              <li><a href=""><i class="bi bi-bookmark-star-fill text-tertiary pe-1"></i></a></li>
+              <li><i class="bi bi-hand-thumbs-up text-tertiary pe-1">999+</i></li>
+              <li><i class="bi bi-chat-fill text-tertiary pe-1">999+</i></li>
+            </ul>
+            <time class="ms-auto text-secondary">2023/04/01 15:00</time>
+          </div>
+        </div>
+        <div class="card  p-2 mb-4 ">
+          <div class="card-header d-flex bg-white border-0">
+            <div class="d-flex align-items-center">
+              <img src="../assets/images/user-1.png" alt="user image" style="width: 40px;height: 40px;"
+                class="rounded-circle me-2">
+              <span class="fs-3">七喜</span>
+            </div>
+            <button type="button" class=" outline-category ms-auto fs-7">恐怖靈異</button>
+
+          </div>
+          <div class="card-body text-center position-relative">
+            <p class="card-text fs-5"><a href="thread.html"
+                class="stretched-link link-dark">七月快到了，有沒有人遇過什麼靈異事件?想聽分享:D?</a></p>
+          </div>
+          <div class="card-footer bg-white d-flex border-0 text-dark">
+            <ul class="d-flex w-50 justify-content-between fs-8">
+              <li><a href=""><i class="bi bi-share-fill text-tertiary pe-1"></i></a></li>
+              <li><a href=""><i class="bi bi-bookmark-star-fill text-tertiary pe-1"></i></a></li>
+              <li><i class="bi bi-hand-thumbs-up text-tertiary pe-1">999+</i></li>
+              <li><i class="bi bi-chat-fill text-tertiary pe-1">999+</i></li>
+            </ul>
+            <time class="ms-auto text-secondary">2023/05/30 15:00</time>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+      <script>
+        const loginButton = document.getElementById('loginButton');
+        const profileButton = document.getElementById('profileButton');
+
+        loginButton.addEventListener('click', () => {
+          // Hide the login button
+          loginButton.style.display = 'none';
+          // Show the profile button
+          profileButton.style.display = 'block';
+        });
+
+        // 前往search頁面
+        // 平板以上
+        // seach input text
+        const goSearchText = document.querySelector('#goSearchText');
+        // 搜索按钮
+        const goSearchBtn = document.querySelector('#goSearchBtn');
+        // search按鈕
+        goSearchBtn.addEventListener('click', event => {
+          event.preventDefault();
+          window.location.href = "search.html";
+        });
+        //enter輸入
+        goSearchText.addEventListener('keydown', event => {
+          event.preventDefault(); // 阻止表单默认提交行为
+          window.location.href = "search.html";
+        });
+
+        // 手機板
+        // seach input text
+        const goSearchFillText = document.querySelector('#goSearchFillText');
+        // 搜索按钮
+        const goSearchFillBtn = document.querySelector('#goSearchFillBtn');
+        // search按鈕
+        goSearchFillBtn.addEventListener('click', event => {
+          event.preventDefault();
+          window.location.href = "search.html";
+        });
+        //enter輸入
+        goSearchFillTex.addEventListener('keydown', event => {
+          event.preventDefault(); // 阻止表单默认提交行为
+          window.location.href = "search.html";
+        });
+      </script>
+</body>
+
 </html>
