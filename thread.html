@@ -121,7 +121,110 @@
       </div>
     </div>
   </div>
-</div> 
+</div>    <div class="container">
+      <!-- 討論串標題及功能列 -->
+      <nav class="  pb-2 border-bottom border-2 border-warning mb-4">
+        <div class="row   align-items-center">
+          <h5 class="fw-bold col-8">可以推薦不錯的奇幻小說給我嗎?可以推薦不錯的奇幻小說給我嗎?</h2>
+          <div class="d-flex flex-nowrap justify-content-around align-items-center col-4 ">
+            <button type="button" class="outline-category " style="white-space: nowrap;">奇幻</button>
+            <a class="" href=""><i class="text-tertiary bi bi-bookmark-star-fill fs-6"></i></a>
+            <a class="" href=""><i class="text-tertiary bi bi-hand-thumbs-up-fill fs-6"></i></a>
+            <a class="" href=""><i class="text-tertiary bi bi-share-fill fs-6"></i></a>
+        </div>
+        </div>
+      </nav>
+      <!-- 時間軸、可滑動區塊 -->
+      <div class="row row-cols-1 mb-4" style=" height:450px; overflow-y: scroll; ">
+          <div class="card p-3 mb-3" style="max-height: 150px;">
+            <div class="row g-0 align-items-center">
+              <div class="col-3 p-3 text-center">
+                <img src="/frontend/assets/user-1-21594ee5.png" class="rounded-circle w-25 border  border-2 border-primary mb-2" alt="...">
+                <h6 class=" text-primary ">51Samwu</h6>
+              </div>
+              <div class="col-9">
+                <div class="card-body">
+                  <p class="card-text text-dark fs-5">想找其他好看的奇幻小說，麻煩各位大大推薦給我:0</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-end bg-transparent border-0 p-0">
+              <time class="text-secondary">2023/3/24 12:00</time>
+            </div>
+          </div>
+          <div class="card p-3 mb-3" style="max-height: 150px;">
+            <div class="row g-0 align-items-center">
+              <div class="col-3 p-3 text-center">
+                <img src="/frontend/assets/user-1-21594ee5.png" class="rounded-circle w-25 border  border-2 border-primary mb-2" alt="...">
+                <h6 class=" text-primary ">小花</h6>
+              </div>
+              <div class="col-9">
+                <div class="card-body">
+                  <p class="card-text text-dark fs-5">流浪的魔法師不錯:D!</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-end bg-transparent border-0 p-0">
+              <time class="text-secondary">2023/3/24 12:00</time>
+            </div>
+          </div>
+          <div class="card p-3 mb-3" style="max-height: 150px;">
+            <div class="row g-0 align-items-center">
+              <div class="col-3 p-3 text-center">
+                <img src="/frontend/assets/user-3-472f5930.png" class="rounded-circle w-25 border  border-2 border-primary mb-2" alt="...">
+                <h6 class=" text-primary ">小綠</h6>
+              </div>
+              <div class="col-9">
+                <div class="card-body">
+                  <p class="card-text text-dark fs-5">我也覺得流浪的魔法師不錯!!另外推異世界神差~</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-end bg-transparent border-0 p-0">
+              <time class="text-secondary">2023/3/24 12:00</time>
+            </div>
+          </div>
+          <div class="card p-3 mb-3" style="max-height: 150px;">
+            <div class="row g-0 align-items-center">
+              <div class="col-3 p-3 text-center">
+                <img src="/frontend/assets/user-2-0d20e951.png" class="rounded-circle w-25 border  border-2 border-primary mb-2" alt="...">
+                <h6 class=" text-primary ">MoUSE</h6>
+              </div>
+              <div class="col-9">
+                <div class="card-body">
+                  <p class="card-text text-dark fs-5">卡一個</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-end bg-transparent border-0 p-0">
+              <time class="text-secondary">2023/3/24 12:00</time>
+            </div>
+          </div>
+      </div>
+
+      <!-- 留言區塊 -->
+      <div class="card p-3 mb-3" >
+        <div class="row g-0 align-items-center">
+          <div class="col-3 p-3 text-center">
+            <img src="/frontend/assets/user-2-0d20e951.png" class="rounded-circle w-25 border  border-2 border-primary mb-2" alt="...">
+            <h6 class=" text-primary ">小名</h6>
+          </div>
+          <div class="col-9">
+            <div class="card-body ">
+              <div class=" row align-items-center">
+                <div class="col-9">
+                  <input type="text" placeholder="(上限30字)" class="form-control">
+                </div>
+                <div class="col-3">
+                  <button type="submit" class="rounded-pill primary-btn w-100 text-center" style="max-width: 90px;"><i class="bi bi-send"></i>送出</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+      </div>
+    </div>
     <footer class=" py-3">
     <div class="container-fluid d-flex flex-column align-items-center">
        <!-- footer-logo -->
@@ -147,12 +250,5 @@
     </div>
   </footer>
     
-    <script>
-      ClassicEditor
-          .create( document.querySelector( '#editor' ) )
-          .catch( error => {
-              console.error( error );
-          } );
-  </script>
   </body>
 </html>
