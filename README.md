@@ -1,8 +1,20 @@
-<<<<<<< HEAD
-# frontend
-前端
+[團體專案](https://github.com/Think-up-together/frontend)fork
+僅製作前端切版
 =======
-# 網頁切版直播班 Vite 範例
+## 專案發想
+因喜愛讀小說，我們萌生了創建一個小說網站的想法，讓用戶既能瀏覽小說，又能在論壇中交流和創作。專案過程中，我們使用便利貼法篩選核心功能，但遇到技術瓶頸和組員興趣減少的挑戰。這段經歷教會了我有效溝通和資源協調，並提升了我的靈活性和適應力。
+
+## 網站頁面(僅列出我參與的部分)
+- 首頁：瀏覽熱門推薦小說
+- 側邊欄：登入可以使用，由此連接討論區
+- 討論區：討論小說內容、日常聊天
+- 搜尋列：搜尋小說名稱、類別篩選
+
+## 網站發想、網站地圖、線框圖
+[Miro](https://miro.com/app/board/uXjVMk6RQZs=/?share_link_id=384627469277)
+
+## 設計稿(設計師提供)
+[Figma](https://www.figma.com/design/y57BjO8K7NJXLGuNjuQCU7/%2315---%E5%85%B1%E7%AD%86%E5%B0%8F%E8%AA%AA%E5%B9%B3%E5%8F%B0-Think-Up-Together?node-id=0-1)
 
 ## Node.js 版本
   - 專案的 Node.js 版本需為 v16 以上
