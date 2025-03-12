@@ -22,7 +22,7 @@
 - 搜尋頁面：類別搜尋、文字搜尋
 - 登入按鈕：登入功能切換、討論區
 - 討論區：討論文章展示、發文按鈕、查看文章留言
- [pages](https://afonguwu.github.io/frontend/)
+ ### [pages](https://afonguwu.github.io/frontend/)
 
 ## 指令列表
 專案的 Node.js 版本需為 v16 以上
