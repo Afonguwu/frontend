@@ -21,7 +21,8 @@
 - 多人協作專案，使用 Git Merge 管控版本
 - 匯入 CKEditor 5 文字編輯器
 
-## 網站頁面  [pages](https://afonguwu.github.io/frontend/)
+## 網站頁面  
+[pages](https://afonguwu.github.io/frontend/)
 - 首頁：最新消息、熱門書籍展示、熱門留言展示
 - 搜尋頁面：類別搜尋、文字搜尋
 - 登入按鈕：登入功能切換、討論區
